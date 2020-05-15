@@ -7,7 +7,9 @@
     <body>  
       <header>
         <section>
-          <img src="techomart_logo.png" width="220" height="47" alt="Логотип магазина Техномарт">
+          <a href="index.html">
+            <img src="techomart_logo.png" width="220" height="47" alt="Логотип магазина Техномарт">
+          </a>
           <p>
             <label>Поиск</label>
             <input type="text">
@@ -56,6 +58,25 @@
             <li>Инструменты</li>
             <li>Перфораторы</li>
         </ol>
+        <section>
+          <h2>Фильтр товаров</h2>
+          <form action="filter">
+            <fieldset>
+              <legend>Производители:</legend>
+              <input type="checkbox" checked>BOSCH
+              <input type="checkbox">ИНТЕРСКОЛ
+              <input type="checkbox" checked>MAKITA
+              <input type="checkbox">DEWALT
+              <input type="checkbox">HITACHI
+            </fieldset>
+            <fieldset>
+              <legend>ПИТАНИЕ:</legend>
+              <label><input type="radio" checked>АККУМУЛЯТОРНЫЕ</label>
+              <label><input type="radio">СЕТЕВЫЕ</label>
+            </fieldset>
+            <button type="submit">ПОКАЗАТЬ</button>
+          </form>
+        </section>
         <section>
             <h2>Перфораторы</h2>
             <ul>
@@ -131,23 +152,6 @@
                     </article>
                 </li>
             </ul>
-
-            <form action="filter">
-                <fieldset>
-                  <legend>Производители:</legend>
-                  <input type="checkbox" checked>BOSCH
-                  <input type="checkbox">ИНТЕРСКОЛ
-                  <input type="checkbox" checked>MAKITA
-                  <input type="checkbox">DEWALT
-                  <input type="checkbox">HITACHI
-                </fieldset>
-                <fieldset>
-                  <legend>ПИТАНИЕ:</legend>
-                  <label><input type="radio" checked>АККУМУЛЯТОРНЫЕ</label>
-                  <label><input type="radio">СЕТЕВЫЕ</label>
-                </fieldset>
-                <button type="submit">ПОКАЗАТЬ</button>
-            </form>
         </section>
       </main>
       <footer>
