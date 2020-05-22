@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт(список товаров)</title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>  
       <header>
@@ -10,10 +11,10 @@
           <a href="index.html">
             <img src="img/techomart-header.svg" width="108" height="18" alt="Логотип магазина Техномарт">
           </a>
-          <p>
-            <label>Поиск</label>
-            <input type="text">
-          </p>
+          <form action="https://echo.htmlacademy.ru/" method="GET">
+            <label for="search-field">Поиск</label>
+            <input type="search" name="search" id="search-field">
+          </form>
           <a href="blank.html">Закладки: <span>0</span></a>
           <a href="blank.html">Корзина: <span>10</span></a>
           <a href="blank.html">Оформить заказ</a>
@@ -35,7 +36,7 @@
           <div>
             <ul>
               <li><a href="blank.html">Равшан Джамшутович</a></li>
-              <li><a href="blank.html"><span>Разлогиниться</span></a></li>
+              <li><a href="blank.html"><span class="visually-hidden">Разлогиниться</span></a></li>
             </ul>
             <ul>
               <li><a href="blank.html">Мои заказы</a></li>
@@ -57,7 +58,7 @@
       </header>
       <main>
         <ol>
-            <li><a href="index.html"><span>Главная</span></a></li>
+            <li><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="blank.html">Инструменты</a></li>
             <li><a> Перфораторы</a></li>
@@ -72,22 +73,26 @@
         </section>
         <section>
           <h2>Фильтр</h2>
-          <form action="https://echo.htmlacademy.ru/">
+          <form action="https://echo.htmlacademy.ru/" method="GET">
             <fieldset>
-              <label>Цена:<span></span></label>
+              <label>Цена:
+                <div>
+
+                </div>
+              </label>
             </fieldset>
             <fieldset>
               <legend>Производители:</legend>
-              <label><input type="checkbox" checked>BOSCH</label>
-              <label><input type="checkbox">ИНТЕРСКОЛ</label>
-              <label><input type="checkbox" checked>MAKITA</label>
-              <label><input type="checkbox">DEWALT</label>
-              <label><input type="checkbox">HITACHI</label>
+              <label><input type="checkbox" name="producer-bosch" checked>BOSCH</label>
+              <label><input type="checkbox" name="producer-interscol">ИНТЕРСКОЛ</label>
+              <label><input type="checkbox" name="producer-makita" checked>MAKITA</label>
+              <label><input type="checkbox" name="producer-dewalt">DEWALT</label>
+              <label><input type="checkbox" name="producer-hitachi">HITACHI</label>
             </fieldset>
             <fieldset>
               <legend>ПИТАНИЕ:</legend>
-              <label><input type="radio" checked>АККУМУЛЯТОРНЫЕ</label>
-              <label><input type="radio">СЕТЕВЫЕ</label>
+              <label><input type="radio" name="supply" value="battery" checked>АККУМУЛЯТОРНЫЕ</label>
+              <label><input type="radio" name="supply" value="electricity">СЕТЕВЫЕ</label>
             </fieldset>
             <button type="submit">ПОКАЗАТЬ</button>
           </form>
@@ -202,14 +207,15 @@
                     </article>
                 </li>
             </ul>
-            <div>
+            <section>
+              <h3 class="visually-hidden">Страницы</h3>
               <ol>
                 <li><a>1</a></li>
                 <li><a href="blank.html">2</a></li>
                 <li><a href="blank.html">3</a></li>
                 <li><a href="blank.html">СЛЕДУЮЩАЯ</a></li>
               </ol>
-            </div>
+            </section>
         </section>
         <section>
           <h2>Пара слов о перфораторах</h2>
@@ -249,16 +255,16 @@
             Все права защищены
           </p>
           <section>
-            <h2>Мы в соцсетях</h2>
+            <h2 class="visually-hidden">Мы в соцсетях</h2>
             <ul>
               <li>
-                <a href="#">Вконтакте</a>
+                <a href="https://vk.com"><span class="visually-hidden">Вконтакте</span></a>
               </li>
               <li>
-                <a href="#">Фейсбук</a>
+                <a href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a>
               </li>
               <li>
-                <a href="#">Инстаграм</a>
+                <a href="https://instagram.com"><span class="visually-hidden">Инстаграм</span></a>
               </li>
             </ul>
           </section>
@@ -271,10 +277,12 @@
         </div>
       </footer>
       <section>
-        <!--здесь будет карточка, всплывающая после добавления товара в корзину-->
-        <h2>Товар добавлен в корзину</h2>
-        <button>Оформить заказ</button>
-        <button>Продолжить покупки</button>
+        <!--карточка, всплывающая после добавления товара в корзину-->
+        <h2 class="visually-hidden">Информация о состоянии корзины</h2>
+        <p>Товар добавлен в корзину</p>
+        <a href="blank.html">Оформить заказ</ф>
+        <button>Продолжить покупки</button><!--думаю, что это кнопка, т.к. в этом случае скорее всего просто закроется окно-->
+        <button><span class="visually-hidden">Закрыть окно</span></button>
       </section>
     </body>
 </html>
