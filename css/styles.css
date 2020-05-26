@@ -1,4 +1,3 @@
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -15,7 +14,7 @@
     --basic-green: #63A63E;
     --basic-grey:#3D546F;
     --basic-greylight:#C5C5C5;
-    --grey-lighter:#F1F5F7;
+    --basic-background:#F1F5F7;
     --white: #FFFFFF;
     --yellow-bright:#FFBF47;
     --yellow-light:#FFD180;
@@ -25,8 +24,131 @@
     --green-bright:#5FBB2D;
     --dark-red:#BA2732;
     --verylight-grey:#EAEAEA;
+    --footer-grey:#293449;
+    --nav-background-grey:#32425C;
 }
+
+@font-face{
+    font-family: 'Cuprum';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/cuprum.woff2") format('woff2');
+    src: url("../fonts/cuprum.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Cuprum';
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/cuprumitalic.woff2") format('woff2');
+    src: url("../fonts/cuprumitalic.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Cuprum';
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/cuprumbolditalic.woff2") format('woff2');
+    src: url("../fonts/cuprumbolditalic.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Cuprum';
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/cuprumbold.woff2") format('woff2');
+    src: url("../fonts/cuprumbold.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'PT Sans';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/ptsans.woff2") format('woff2');
+    src: url("../fonts/ptsans.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/ptsansbold.woff2") format('woff2');
+    src: url("../fonts/ptsansbold.woff") format('woff');
+} 
 
 body{
     min-width: 940px;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.header-logo{
+    background-color: var(--basic-red, #EE3643);
+    width:220;
+    height: 47;
+}
+
+.high-footer{
+    background-color: var(--footer-grey);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+  }
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation{
+    background-color: var(--nav-background-grey);
+    color: white;
+}
+
+.high-footer a{
+    color: var(--white);
+}
+
+.navigation a{
+    color: var(--white);
+}
+
+.header{
+    background-color:var(--basic-background);
+}
+
+.shop-info h1{
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color:var(--basic-red, red);
+}
+
+.shop-tel{
+    color:var(--basic-red, red);
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.shop-info .shop-address{
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--nav-background-grey);
+}
+
+.account-managment a{
+    font-size: 21px;
+    line-height: 21px;
+    color: black;
+}
+
+.search, .bookmarks, .cart, .made-order-button, .navigation {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.navigation ul{
+    list-style: none;
 }
