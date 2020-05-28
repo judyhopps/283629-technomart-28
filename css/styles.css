@@ -81,6 +81,17 @@ body{
     font-family: 'Cuprum', sans-serif;
 }
 
+a {
+    text-decoration: none;
+  }
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+
 .header-logo{
     background-color: var(--basic-red, #EE3643);
     width:220;
@@ -92,14 +103,6 @@ body{
     color: var(--white);
 }
 
-a {
-    text-decoration: none;
-  }
-  
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 .navigation{
     background-color: var(--nav-background-grey);
@@ -151,4 +154,114 @@ img {
 
 .navigation ul{
     list-style: none;
+}
+
+/* About company */
+
+.index-columns p{
+    font-family: 'PT Sans', serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.index-columns h2{
+    text-transform: uppercase;
+}
+
+.index-columns a:not(.map){
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--basic-red, red);
+}
+
+.about-us ul{
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+} 
+
+.about-us li::before{
+    content: "-";
+}
+
+/* Popups */
+
+.map-popup, .feedback{
+    display: none;
+}
+
+/* Footer */
+
+.footer-part-one{
+    background-color: var(--nav-background-grey);
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+.additional-navigation a{
+    color: inherit;
+}
+
+.additional-navigation ul{
+    list-style: none;
+}
+
+.additional-navigation ul:last-child{
+    color: var(--yellow-light, yellow);
+}
+
+.footer-part-two{
+    background-color: var(--footer-grey, grey);
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+}
+
+.developers-info a{
+    color: var(--yellow-light, yellow);
+}
+
+/* Social media */
+.social-media ul{ 
+    list-style: none;
+}
+
+.social-media  a{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: #212A3A;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-media  a.vk{
+    background-image: url("../img/icon-vk.svg");
+}
+
+.social-media  a.fb{
+    background-image: url("../img/icon-fb.svg");
+}
+
+.social-media  a.insta{
+    background-image: url("../img/icon-insta.svg");
+}
+
+.social-media a:hover, 
+.social-media a:active
+{
+    background-color: var(--basic-red, red);
+}
+
+.developers-info a:hover
+{
+    text-decoration: underline;
+}
+
+
+.developers-info a:active
+{
+    color:var(--basic-red);
 }
