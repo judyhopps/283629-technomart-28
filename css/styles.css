@@ -27,6 +27,8 @@
     --footer-grey:#293449;
     --nav-background-grey:#32425C;
     --header-dark-grey:#161D29;
+    --semitransparent-white:  rgba(255, 255, 255, 0.5);
+    --nav-active: #1D2739;
 }
 
 @font-face{
@@ -127,20 +129,10 @@ label[name="search"]:active{
 }
 
 .made-order-button:active{
-    color: rgba(255, 255, 255, 0.5);
-}
-
-/* Navigation */
-.navigation{
-    background-color: var(--nav-background-grey);
-    color: white;
+    color: var(--semitransparent-white, white);
 }
 
 .high-footer a{
-    color: var(--white);
-}
-
-.navigation a{
     color: var(--white);
 }
 
@@ -152,9 +144,10 @@ a.bookmarks:active,
 a.cart:active
 {
     background-color: var(--header-dark-grey, darkgrey);
-    opacity: 50%;
+    color: var(--semitransparent-white, white);
 }
 
+/* Shop info */
 .shop-info h1{
     font-style: italic;
     font-size: 16px;
@@ -167,6 +160,8 @@ a.cart:active
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
+    
+    border: 3px solid var(--white, white);
 }
 
 .shop-info .shop-address{
@@ -179,6 +174,15 @@ a.cart:active
     font-size: 21px;
     line-height: 21px;
     color: black;
+    background-color: var(--white);
+}
+
+.account-managment a:hover{
+    color: var(--basic-red, red);
+}
+
+.account-managment a:active{
+    color: var(--basic-greylight, grey);
 }
 
 .search, .bookmarks, .cart, .made-order-button, .navigation {
@@ -186,8 +190,31 @@ a.cart:active
     line-height: 24px;
 }
 
+/* Navigation */
+.navigation{
+    background-color: var(--nav-background-grey);
+    color: white;
+}
+
+.navigation a{
+    color: var(--white);
+}
+
+.navigation a:hover{
+    background-color: var(--footer-grey);
+}
+
+.navigation a:active{
+    color: var(--semitransparent-white);
+    background-color: var(--nav-active);
+}
+
 .navigation ul{
     list-style: none;
+}
+
+.navigation{
+    box-shadow: inset 0px -5px 0px var(--footer-grey);
 }
 
 /* About company */
