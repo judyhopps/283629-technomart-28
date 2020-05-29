@@ -26,6 +26,7 @@
     --verylight-grey:#EAEAEA;
     --footer-grey:#293449;
     --nav-background-grey:#32425C;
+    --header-dark-grey:#161D29;
 }
 
 @font-face{
@@ -99,12 +100,37 @@ img {
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
+.header-logo:active{
+    background-color: var(--dark-red, red);
+}
+
 .high-footer{
     background-color: var(--footer-grey);
     color: var(--white);
 }
 
+input[name="search"]{
+    background-color: var(--footer-grey);
+    border: none;
+}
 
+label[name="search"]:active{
+    opacity: 50%;
+}
+
+.made-order-button{
+    background-color: var(--basic-green, green);
+}
+
+.made-order-button:hover{
+    background-color: var(--green-bright, green);
+}
+
+.made-order-button:active{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Navigation */
 .navigation{
     background-color: var(--nav-background-grey);
     color: white;
@@ -120,6 +146,13 @@ img {
 
 .header{
     background-color:var(--basic-background);
+}
+
+a.bookmarks:active,
+a.cart:active
+{
+    background-color: var(--header-dark-grey, darkgrey);
+    opacity: 50%;
 }
 
 .shop-info h1{
@@ -173,6 +206,10 @@ img {
     text-transform: uppercase;
     color: white;
     background-color: var(--basic-red, red);
+}
+
+.index-columns a:not(.map):active{
+    background-color: var(--dark-red, red);
 }
 
 .about-us ul{
