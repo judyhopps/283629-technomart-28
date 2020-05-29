@@ -269,7 +269,7 @@ a.cart:active
 
 /* Popups */
 
-.map-popup, .feedback{
+.map-popup, .feedback, .good-info-cart{
     display: none;
 }
 
