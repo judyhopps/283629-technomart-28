@@ -177,12 +177,30 @@ a.cart:active
     background-color: var(--white);
 }
 
+.login-features a{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--nav-background-grey,grey);
+}
+
 .account-managment a:hover{
     color: var(--basic-red, red);
 }
 
-.account-managment a:active{
+.account-managment a.login-name:hover,
+.account-managment a.logout:hover{
+    color: black;
+}
+
+.account-managment a:active,
+.account-managment a.logout:active,
+.account-managment a.login-name:active
+{
     color: var(--basic-greylight, grey);
+}
+
+.account-managment ul{
+    list-style: none;
 }
 
 .search, .bookmarks, .cart, .made-order-button, .navigation {
