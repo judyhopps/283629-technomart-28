@@ -14,7 +14,7 @@
     --basic-green: #63A63E;
     --basic-grey:#3D546F;
     --basic-greylight:#C5C5C5;
-    --basic-background:#F1F5F7;
+    --basic-background:#F1F5F7; 
     --white: #FFFFFF;
     --yellow-bright:#FFBF47;
     --yellow-light:#FFD180;
@@ -96,6 +96,7 @@ img {
     background-color: var(--basic-red, #EE3643);
     width:220;
     height: 47;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .high-footer{
@@ -199,17 +200,6 @@ img {
     color: white;
 }
 
-.additional-navigation a{
-    color: inherit;
-}
-
-.additional-navigation ul{
-    list-style: none;
-}
-
-.additional-navigation ul:last-child{
-    color: var(--yellow-light, yellow);
-}
 
 .footer-part-two{
     background-color: var(--footer-grey, grey);
@@ -218,8 +208,43 @@ img {
     color: white;
 }
 
+/* Additional navigation */
+
+.additional-navigation ul{
+    list-style: none;
+}
+
+.additional-navigation-high a{
+    color: var(--white, white);
+}
+
+.additional-navigation-low a{
+    color: var(--yellow-light, yellow);
+}
+
+.additional-navigation a:hover{
+    text-decoration: underline;
+}
+
+.additional-navigation a:active{
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+/* Developers info */
+
 .developers-info a{
     color: var(--yellow-light, yellow);
+}
+
+.developers-info a:hover
+{
+    text-decoration: underline;
+}
+
+.developers-info a:active
+{
+    color:var(--basic-red);
 }
 
 /* Social media */
@@ -255,13 +280,3 @@ img {
     background-color: var(--basic-red, red);
 }
 
-.developers-info a:hover
-{
-    text-decoration: underline;
-}
-
-
-.developers-info a:active
-{
-    color:var(--basic-red);
-}
