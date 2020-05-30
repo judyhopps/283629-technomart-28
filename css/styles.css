@@ -35,6 +35,7 @@
     --not-active-price:#A9A9A9;
     --very-very-slight-grey:#E5E5E5;
     --black: black;
+    --social-dark-grey:#212A3A;
 }
 
 @font-face{
@@ -207,7 +208,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .account-managment a{
     font-size: 21px;
     line-height: 21px;
-    color: black;
+    color:var(--black, black);
     background-color: var(--white);
 }
 
@@ -223,7 +224,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .account-managment a.login-name:hover,
 .account-managment a.logout:hover{
-    color: black;
+    color:var(--black, black);
 }
 
 .account-managment a:active,
@@ -241,7 +242,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /* Navigation */
 .navigation{
     background-color: var(--nav-background-grey);
-    color: white;
+    color: var(--white,white);
 }
 
 .navigation a{
@@ -279,7 +280,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .index-columns a:not(.map){
     text-transform: uppercase;
-    color: white;
+    color: var(--white, white);
     background-color: var(--basic-red, red);
 }
 
@@ -309,7 +310,7 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--nav-background-grey);
     font-size: 18px;
     line-height: 24px;
-    color: white;
+    color: var(--white, white);
 }
 
 
@@ -317,7 +318,7 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--footer-grey, grey);
     font-size: 16px;
     line-height: 18px;
-    color: white;
+    color: var(--white, white);
 }
 
 /* Additional navigation */
@@ -368,7 +369,7 @@ input[type="search"]::-webkit-search-results-decoration {
     display: inline-block;
     width: 44px;
     height: 44px;
-    background-color: #212A3A;
+    background-color: var(--social-dark-grey, grey);
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -457,7 +458,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog-filter button{
     background-color: var(--white);
-    border: 1px solid black;
+    border: 1px solid var(--black, black);
     width: 220px;
     height: 38px;
 }
