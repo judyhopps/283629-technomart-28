@@ -489,6 +489,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .service-types button{
     border: none;
+    outline: none;
     background-color: var(--nav-background-grey,#32425C);
     font-weight: bold;
     font-size: 21px;
@@ -496,7 +497,8 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--white, white);
 }
 
-.service-types button:hover{
+.service-types button:hover,
+.service-types button:focus{
     border:none;
     outline: none;
     background-color: var(--footer-grey, #293449);
