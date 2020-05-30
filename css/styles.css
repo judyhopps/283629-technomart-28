@@ -490,12 +490,23 @@ input[type="search"]::-webkit-search-results-decoration {
 .service-types button{
     border: none;
     background-color: var(--nav-background-grey,#32425C);
-    box-shadow: 0px 1px 0px var(--footer-grey),
-     inset 0px 1px 0px var(--button-shadow-grey);
     font-weight: bold;
     font-size: 21px;
     line-height: 30px; 
     color: var(--white, white);
+}
+
+.service-types button:hover{
+    border:none;
+    outline: none;
+    background-color: var(--footer-grey, #293449);
+}
+
+.service-types button:active{
+    border:none;
+    outline: none;
+    background-color: var(--white, white);
+    color: var(--nav-background-grey,#32425C);
 }
 
 .service h3{
