@@ -12,6 +12,8 @@
 :root{
     --basic-red: #EE3643;
     --basic-green: #63A63E;
+    --shadow-green:#367315;
+    --active-green:#518534;
     --basic-grey:#3D546F;
     --basic-greylight:#C5C5C5;
     --basic-background:#F1F5F7; 
@@ -29,6 +31,10 @@
     --header-dark-grey:#161D29;
     --semitransparent-white:  rgba(255, 255, 255, 0.5);
     --nav-active: #1D2739;
+    --beige:#F7F3EC;
+    --not-active-price:#A9A9A9;
+    --very-very-slight-grey:#E5E5E5;
+    --black: black;
 }
 
 @font-face{
@@ -362,3 +368,186 @@ a.cart:active
     background-color: var(--basic-red, red);
 }
 
+
+
+/* About perforators */
+.about-perforators{
+    background-color: var(--basic-background, grey);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.about-perforators h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Cuprum';
+}
+
+/* Perforators catalog */
+
+.perforators-catalog h2{
+    background-color: var(--basic-background, grey);
+    color: var(--nav-background-grey, black);
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.bread-crumbs{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.catalog-sort h2,
+.catalog-filter h2{
+    font-family: 'PT Sans', san-serif;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: var(--beige);
+}
+
+/* Filter */
+
+.catalog-filter legend{
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.0484964px;
+    text-transform: uppercase;
+}
+
+.catalog-filter fieldset{
+    border: none;
+}
+
+.catalog-filter label{
+    font-size: 15px;
+    line-height: 19px;
+    font-family: 'PT Sans', Arial, sans-serif
+}
+
+.catalog-filter button{
+    background-color: var(--white);
+    border: 1px solid black;
+    width: 220px;
+    height: 38px;
+}
+
+/* Catalog items */
+
+.perforators-items ul{
+    list-style: none;
+}
+
+.perforators-items article{
+    border: 1px solid var(--verylight-grey);
+    width: 220px;
+    height: 318px;
+    font-family:'PT Sans', Arial,  sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.perforators-items h3{
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.perforators-items del, .perforators-items p{
+    text-transform: uppercase;
+}
+
+.perforators-items del{
+    color:var(--not-active-price, grey);
+}
+
+.perforators-items p{
+    background-color: var(--basic-red, red);
+
+}
+
+.perforators-items a{
+    background-color: var(--basic-green, green) ;
+    box-shadow: inset 0px -3px 0px var(--shadow-green, green);
+    border-radius: 2px;
+    color: var(--white, white);
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.perforators-items a:focus
+{outline: none;}
+
+.perforators-items a:hover,
+.perforators-items a:focus{
+    background-color: var(--green-bright, green);
+}
+
+.perforators-items a:active{
+    background-color: var(--active-green, green);
+}
+
+.perforators-items button{
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--nav-background-grey, black);
+    border: 3px solid var(--basic-green, green);
+    border-radius: 2px;
+    background-color: var(--white);
+}
+
+.perforators-items button:hover {
+    border: 3px solid var(--nav-background-grey, grey);
+}
+
+.perforators-items button:active{
+    border: 3px solid var(--nav-background-grey, grey);
+    opacity: 50%;
+}
+
+.perforators-items button:focus{
+    outline: none;
+    border: 3px solid var(--nav-background-grey, grey);
+}
+
+/* Paging */
+
+.pages{
+    list-style: none;
+}
+
+.pages a{
+    border: 1px solid var(--very-very-slight-grey, grey);
+    border-radius: 2px;
+    background-color: var(--white, white);
+    color: var(--black);
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+.pages a:focus{
+    outline: none;
+}
+
+.pages a:hover,
+.pages a:focus{
+    border-color: var(--basic-greylight, grey);
+    background-color: var(--white);
+}
+
+.pages a:active{
+    border-color: var(--basic-red, red);
+}
+
+.pages a:not([href]){
+    background-color: var(--basic-red, red);
+    border-color: var(--basic-red, red);
+}
