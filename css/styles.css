@@ -41,6 +41,8 @@
     --button-shadow-grey:#405069;
     --semitransparent-grey :rgba(197, 197, 197, 0.3);
     --semitransparent-darkgrey: rgba(169, 169, 169, 0.3);
+    --semtransparent-black: rgba(0, 0, 0, 0.3);
+    --semitransparent-black-for-input: rgba(0, 0, 0, 0.4)
 }
 
 @font-face{
@@ -600,6 +602,16 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+    color: var(--black, black);
+    list-style: none;
+}
+
+.bread-crumbs a{
+    color: var(--black, black);
+}
+
+.catalog-sort{
+    background-color: var(--beige, #F7F3EC);
 }
 
 .catalog-sort h2,
@@ -608,6 +620,30 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 13px;
     line-height: 18px;
     background-color: var(--beige);
+}
+
+.catalog-filter input:disabled+label{
+    color: var(--semitransparent-black-for-input, rgba(0, 0, 0, 0.4)); 
+}
+
+/* Sort */
+
+.catalog-sort a{
+    text-transform: uppercase;
+    color:var(--semtransparent-black, rgba(0, 0, 0, 0.3));
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--basic-red, #EE3643);
+}
+
+.catalog-sort a:hover{
+    text-decoration-style: solid;
+    color: var(--black, black);
+}
+
+.catalog-sort a:active{
+    text-decoration: none;
+    color: var(--basic-red, #EE3643);
 }
 
 /* Filter */
