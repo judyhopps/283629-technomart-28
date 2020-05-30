@@ -56,58 +56,56 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="site-parts">
         <h2 class="visually-hidden">Разделы сайта</h2>
-        <div>
+        <div class="small-category materials">
           <h3>Материалы</h3>
           <a href="blank.html">На любой вкус</a>
         </div>
-        <div>
+        <div class="small-category tools">
           <h3>Инструмент</h3>
           <a href="blank.html">На все случаи</a>
         </div>
-        <div>
+        <div class="small-category equipment">
           <h3>Техника</h3>
           <a href="blank.html">Для стройки</a>
         </div>
-        <div>
-          <div>
-            <div>
+        <div class="slider">
+            <div class="slider-part slider-perforators">
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
-              <img src="img/slider-perforator-light.jpg" alt="Перфораторы" width="620" height="266">
+              <!-- <img src="img/slider-perforator-light.jpg" alt="Перфораторы" width="620" height="266"> -->
             </div>
-            <div>
+            <div class="slider-part slider-drills">
               <h3>Дрели</h3>
               <p>Соседям на радость!</p>
-              <img src="img/slider-drill-light.jpg" alt="Дрели" width="620" height="266">
+              <!-- <img src="img/slider-drill-light.jpg" alt="Дрели" width="620" height="266"> -->
             </div>
             <button type="button" class="slider-back"><span class="visually-hidden">Следующее изображение категории товаров</span></button>
             <button type="button" class="slider-forward"> <span class="visually-hidden">Предыдущее изображение категории товаров</span> </button>
             <button type="button" class="slider-drill"><span class="visually-hidden">Первое изображение категории товаров</span></button>
             <button type="button" class="slider-perforator"><span class="visually-hidden">Второе изображение категории товаров</span></button>
-            <a href="catalog.html">Открыть каталог</a>
-          </div>
+            <a href="catalog.html" class="open-catalog-button index-button">Открыть каталог</a>
         </div>
-        <div>
+        <div class="small-category discount">
           <h3>Скидка 50%</h3>
           <a href="blank.html">На 350 товаров</a>
         </div>
-        <div>
+        <div class="small-category free-delivery">
           <h3>Доставка</h3>
-          <a href="blank.html">Бесплатно</a>
+          <a href="blank.html"><span class="non-opacity">Бесплатно</span></a>
         </div>
       </section>
-      <section>
-        <div>
+      <section class="popular-goods">
+        <div class="index-headings">
           <h2>Популярные товары</h2>
-          <a href="blank.html">Все популярные товары</a>
+          <a href="blank.html" class="index-button all-popular-goods">Все популярные товары</a>
         </div>
-        <ul>
+        <ul class="perforators-items">
           <li>                    
-            <article>
+            <article class="bosch-9000">
               <h3>Перфоратор BOSCH BFG 9000</h3>
-              <img src="img/bosch-9000-light.jpg" alt="BOSH BFG 9000" width="184" height="146">
+              <img src="img/bosch-9000-light.jpg" alt="BOSH BFG 9000" width="184" height="164">
               <div>
                 <a href="blank.html">Купить</a>
                 <button type="button">В Закладки</button>
@@ -154,11 +152,11 @@
         </ul>
       </section>
       <section>
-        <div>
+        <div class="index-headings">
           <h2>Популярные производители:</h2>
-          <a href="blank.html">Все производители</a>
+          <a href="blank.html" class="index-button">Все производители</a>
         </div>
-        <ul>
+        <ul class="popular-producers">
           <li><a href="blank.html"><img src="img/bosch.jpg" alt="Лого BOSH" width="220" height="145"></a></li>
           <li><a href="blank.html"><img src="img/makita.jpg" alt="Лого Makito" width="220" height="145"></a></li>
           <li><a href="blank.html"><img src="img/dewalt.jpg" alt="Лого Dewalt" width="220" height="145"></a></li>
@@ -169,18 +167,18 @@
           <li><a href="blank.html"><img src="img/metabo.jpg" alt="Лого Метабо" width="220" height="145"></a></li>
         </ul>
       </section>
-      <section>
+      <section class="services">
         <h2>Сервисы</h2>
         <div>
           <div>
             <!--пока оставила список всё-таки, если при стилизации вызовет проблемы, оставлю просто кнопки-->
-            <ul>
+            <ul class="service-types">
               <li><button>Доставка</button></li>
               <li><button>Гарантия</button></li>
               <li><button>Кредит</button></li>
             </ul>
           </div>
-          <div>
+          <div class="service delivery">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо 
@@ -189,19 +187,19 @@
               поднимая его на ваш этаж!
             </p>
           </div>
-          <div>
+          <div class="service quarantee">
             <h3>Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,
               вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
             </p>  
           </div>
-          <div>
+          <div class="service credit">
             <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще! <br/>
               Кредитные консультанты придут вам на помощь.
-              <a href="blank.html">Отправить заявку</a>
+              <a href="blank.html" class="index-button send-request-for-credit">Отправить заявку</a>
             </p>
           </div>
         </div>
