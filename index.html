@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
@@ -9,14 +9,13 @@
   <body>
     <header class="header">
       <section class="high-footer">
+        <div class="high-footer-wrapper container">
         <a class="header-logo">
           <img src="img/techomart-header.svg" width="108" height="18" alt="Логотип магазина Техномарт">
         </a>
         <form action="https://echo.htmlacademy.ru/" method="GET" class="search">
-          <p >
             <label for="search-field"><span class="visually-hidden">Поиск:</span></label>
             <input type="search" name="search" id="search-field" placeholder="Поиск:">
-          </p>
         </form>
         <a href="blank.html" class="bookmarks">
           Закладки: <span>0</span>
@@ -25,14 +24,15 @@
           Корзина: <span>0</span>
         </a>
         <a href="blank.html" class="made-order-button">Оформить заказ</a>
+        </div>
       </section>
-      <section class="shop-info">
+      <section class="shop-info container">
         <h1>
           Интернет-магазин <br/>
           строительных материалов<br/>
           и инструментов для ремонта
         </h1>
-        <div>
+        <div class="shop-contacts">
           <a href="tel:+78125550555" class="shop-tel">+7 (812) 555-05-55</a>
           <p class="shop-address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -40,10 +40,10 @@
         </div>
         <div class="account-managment">
           <a href="blank.html">Войти</a>
-          <a href="blank.html">Регистрация</a>
+          <a href="blank.html" class="registration">Регистрация</a>
         </div>
       </section>
-      <nav class="navigation">
+      <nav class="navigation container">
         <ul>
           <li><a>Главная </a></li>
           <li><a href="blank.html">Компания</a></li>
@@ -55,7 +55,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <section class="site-parts">
         <h2 class="visually-hidden">Разделы сайта</h2>
         <div class="small-category materials">
@@ -234,7 +234,7 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer-part-one">
         <section>
           <a>

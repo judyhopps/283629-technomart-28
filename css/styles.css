@@ -102,19 +102,30 @@ body{
 a {
     text-decoration: none;
   }
-  
-img {
-  max-width: 100%;
-  height: auto;
-}
+
+
+/* Content for center */
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 
 /* Header */
 
 .header-logo{
     background-color: var(--basic-red, #EE3643);
-    width:220;
-    height: 47;
+    width:220px;
+    height: 47px;
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img{
+    width:108px;
+    height: 18px;
 }
 
 .header-logo:active{
@@ -124,12 +135,14 @@ img {
 .high-footer{
     background-color: var(--footer-grey);
     color: var(--white);
+    height: 42px;
 }
 
 input[name="search"]{
     background-color: var(--footer-grey);
     border: none;
     font-family: 'Cuprum' Arial, sans-serif;
+    width: 270px;
 }
 
 label[name="search"]:active{
@@ -138,6 +151,7 @@ label[name="search"]:active{
 
 .made-order-button{
     background-color: var(--basic-green, green);
+    width: 150px;
 }
 
 .made-order-button:hover{
@@ -154,6 +168,14 @@ label[name="search"]:active{
 
 .header{
     background-color:var(--basic-background, #F1F5F7);
+    margin-bottom: 60px;
+    width:100%;
+}
+
+.high-footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
 a.bookmarks:active,
@@ -167,6 +189,9 @@ a.cart:active
 .search, .bookmarks, .cart, .made-order-button, .navigation {
     font-size: 18px;
     line-height: 24px;
+}
+.bookmarks, .cart, .made-order-button{
+    width: 150px;
 }
 
 /* Search */
@@ -188,14 +213,24 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--white, white);
 }
 
-
-
 /* Shop info */
+
+.shop-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .shop-info h1{
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
     color:var(--basic-red, red);
+    width: 208px;
+}
+
+.shop-contacts{
+    width: 270px;
 }
 
 .shop-tel{
@@ -211,11 +246,22 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 14px;
     line-height: 24px;
     color: var(--nav-background-grey);
+    margin: 0px;
+}
+
+.account-managment{
+    width:300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.account-managment .registration{
+    margin-left: 10px;
 }
 
 .account-managment a{
     font-size: 21px;
-    line-height: 21px;
+    /* line-height: 21px; */
     color:var(--black, black);
     background-color: var(--white);
 }
@@ -253,13 +299,17 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /* Navigation */
-.navigation{
+/* .navigation{
     background-color: var(--nav-background-grey);
     color: var(--white,white);
-}
+} */
 
 .navigation a{
     color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .navigation a:hover{
@@ -272,14 +322,34 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .navigation ul{
+    background-color: var(--nav-background-grey);
+    box-shadow: inset 0px -5px 0px var(--footer-grey);
     list-style: none;
+    padding: 0px;
+    margin:0px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 55px;
+    color: var(--white,white);
 }
 
-.navigation{
-    box-shadow: inset 0px -5px 0px var(--footer-grey);
+.navigation li{
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
 }
+
+/* .navigation{
+    box-shadow: inset 0px -5px 0px var(--footer-grey);
+} */
 
 /* About company */
+
+.index-columns{
+    outline: 5px solid rgba(76, 238, 238, 0.3);
+    outline-offset: -5px;
+}
 
 .index-columns p{
     font-family: 'PT Sans', serif;
@@ -804,3 +874,16 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--basic-red, red);
     border-color: var(--basic-red, red);
 }
+
+/* Grids and flexes */
+.page {
+    height: 100%;
+}
+
+.page body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+ 

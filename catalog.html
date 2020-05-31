@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт(список товаров)</title>
@@ -9,20 +9,20 @@
     <body>  
       <header class="header">
         <section class="high-footer">
+          <div class="high-footer-wrapper container">
           <a href="index.html" class="header-logo">
             <img src="img/techomart-header.svg" width="108" height="18" alt="Логотип магазина Техномарт">
           </a>
           <form action="https://echo.htmlacademy.ru/" method="GET" class="search">
-            <p >
               <label for="search-field"><span class="visually-hidden">Поиск</span></label>
               <input type="search" name="search" id="search-field" placeholder="Поиск:">
-            </p>
           </form>
           <a href="blank.html" class="bookmarks">Закладки: <span>0</span></a>
           <a href="blank.html" class="cart">Корзина: <span>10</span></a>
           <a href="blank.html" class="made-order-button">Оформить заказ</a>
+        </div>
         </section>
-        <section class="shop-info">
+        <section class="shop-info container">
           <h1>
             Интернет-магазин <br/>
             строительных материалов<br/>
@@ -47,7 +47,7 @@
             </ul>
           </div>
         </section>
-        <nav class="navigation">
+        <nav class="navigation container">
           <ul>
             <li><a href="index.html">Главная </a></li>
             <li><a href="blank.html">Компания</a></li>
@@ -59,7 +59,7 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="container">
         
         <ol class="bread-crumbs">
             <li><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
@@ -229,7 +229,7 @@
           </p>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer container">
         <div class="footer-part-one">
           <section>
             <a href="index.html">
