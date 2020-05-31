@@ -347,8 +347,9 @@ input[type="search"]::-webkit-search-results-decoration {
 /* About company */
 
 .index-columns{
-    outline: 5px solid rgba(76, 238, 238, 0.3);
-    outline-offset: -5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 .index-columns p{
@@ -359,6 +360,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .index-columns h2{
     text-transform: uppercase;
+    font-weight: normal;
+    padding: 0;
+    margin:0;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
 }
 
 .index-columns a:not(.map){
@@ -371,14 +378,38 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--dark-red, red);
 }
 
+.about-us{
+    width: 478px;
+}
+
+.contacts{
+    width: 300px;
+}
+
 .about-us ul{
     font-size: 18px;
     line-height: 24px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 } 
 
 .about-us li::before{
     content: "-";
+}
+
+.about-us p:first-child{
+    margin-bottom: 40px;
+}
+
+.contacts img{
+    width: 300px;
+    height: 158px;
+}
+
+.map{
+    display: inline-block;
+    margin-bottom: 25px;
 }
 
 /* Popups */
@@ -390,6 +421,8 @@ input[type="search"]::-webkit-search-results-decoration {
 /* Footer */
 
 .footer-part-one{
+    outline: 5px solid rgba(238, 215, 10, 0.3);
+    outline-offset: -5px;
     background-color: var(--nav-background-grey);
     font-size: 18px;
     line-height: 24px;
