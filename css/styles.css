@@ -662,7 +662,12 @@ input[type="search"]::-webkit-search-results-decoration {
 /* Popular producers */
 
 .popular-producers{
+    margin:0;
+    padding:0;
     list-style: none;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .popular-producers img:hover{
@@ -1001,6 +1006,11 @@ input[type="search"]::-webkit-search-results-decoration {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 18px;
     column-gap: 20px;
+}
+
+.perforators-items.popular{
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 
