@@ -544,6 +544,18 @@ input[type="search"]::-webkit-search-results-decoration {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
+    margin: 0;
+}
+
+.site-parts{
+    display: grid;
+    grid-template-areas: 
+    "materials tools equipment"
+    "slider slider discount"
+    "slider slider free-delivery";
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
+    gap: 20px;
 }
 
 .small-category a{
@@ -561,28 +573,37 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .materials{
     background-color: var(--yellow-bright, yellow);
+    grid-area: materials;
 }
 
 .tools{
     background-color: var(--blue, blue);
+    grid-area: tools;
 }
 
 .equipment{
     background-color: var(--lillac, pink);
+    grid-area: equipment;
 }
 
 .discount{
     background-color: var(--green-light, green);
+    grid-area: discount;
 }
 
 .free-delivery{
     background-color: var(--yellow-very-bright, yellow);
+    grid-area: free-delivery;
 }
 
 .open-catalog-button{
     background-color: var(--basic-red, red);
     width: 192px;
     color: var(--white, white);
+}
+
+.slider{
+    grid-area: slider;
 }
 
 .slider-part{
@@ -611,6 +632,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .slider-drills{
     background-image: url("../img/slider-drill-light.jpg");
+    /* пока не сверстан слайдер */
+    display: none;
 }
 
 /* Popular goods */
