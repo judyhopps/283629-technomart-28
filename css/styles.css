@@ -255,6 +255,22 @@ input[type="search"]::-webkit-search-results-decoration {
     justify-content: flex-end;
 }
 
+.logined-user{
+    flex-direction: column;
+    justify-content: center;
+    width: 299px;
+}
+
+.login-features{
+    display: flex;
+    justify-content: center;
+}
+
+.account-buttons li:first-child
+{
+    text-align: center;
+}
+
 .account-managment .registration{
     margin-left: 10px;
 }
@@ -290,6 +306,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .account-managment ul{
     list-style: none;
+    margin: 0;
+    padding:0;
 }
 
 /* Common button styles */
@@ -472,8 +490,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .footer-part-two .container{
     display: flex;
-    outline: 5px solid rgba(238, 10, 200, 0.3);
-    outline-offset: -5px;
     justify-content: space-between;
 }
 
@@ -775,7 +791,16 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 30px;
     line-height: 30px;
     font-family: 'Cuprum';
+    padding-top: 64px;
+    padding-bottom: 25px;
+    padding-left: 0;
 }
+.about-perforators p{
+    padding-bottom: 68px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 /* Perforators catalog */
 
@@ -787,6 +812,43 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 30px;
 }
 
+/* grid for catalog-filter-sort */
+
+.perforators-catalog{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "filter sort"
+    "filter goods";
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 89px 48px 1fr;
+    column-gap: 20px;
+}
+
+.perforators-catalog-header{
+    grid-area: header;
+}
+
+.catalog-sort{
+    grid-area: sort;
+}
+.catalog-filter{
+    grid-area: filter;
+}
+
+.catalog-goods{
+    grid-area: goods;
+}
+
+.bread-crumbs-home{
+    background-image: url("../img/icon-home.svg");
+    display: inline-block;
+    width: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-repeat: no-repeat;
+}
+
 .bread-crumbs{
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
@@ -794,14 +856,20 @@ input[type="search"]::-webkit-search-results-decoration {
     text-transform: uppercase;
     color: var(--black, black);
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .bread-crumbs a{
     color: var(--black, black);
+    margin-left: 17px;
 }
 
 .catalog-sort{
     background-color: var(--beige, #F7F3EC);
+    display: flex;
+    justify-content: space-between;
 }
 
 .catalog-sort h2,
@@ -847,6 +915,38 @@ input[type="search"]::-webkit-search-results-decoration {
     text-transform: uppercase;
 }
 
+.catalog-filter{
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+}
+
+.catalog-filter-header{
+    flex-basis: 38px;
+}
+
+.catalog-filter-producers{
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-filter-supply{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .catalog-filter-price{
+    flex-basis: 207px;
+}
+
+.catalog-filter-producers{
+    flex-basis: 268px;
+}
+
+.catalog-filter-supply{
+    flex-basis: 137px;
+} */
+
 .catalog-filter fieldset{
     border: none;
 }
@@ -868,6 +968,22 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .perforators-items{
     list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.perforators-items{
+    display: grid;
+    width: 700px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 18px;
+    column-gap: 20px;
+}
+
+
+.perforators-items li{
+    padding: 0;
+    margin: 0;
 }
 
 .perforators-items article{
@@ -878,6 +994,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
+    margin: 0;
 }
 
 .perforators-items h3{
@@ -952,6 +1069,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .pages{
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-top: 48px;
+    width: 284px;
+    justify-content: space-between;
 }
 
 .pages a{
@@ -961,16 +1084,24 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--black);
     text-transform: uppercase;
     box-shadow: none;
+    display: inline-block;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
-.pages a:focus{
-    outline: none;
+.pages a.next-page{
+    padding-right: 32px;
+    padding-left: 31px;
 }
 
 .pages a:hover,
 .pages a:focus{
     border-color: var(--basic-greylight, grey);
     background-color: var(--white);
+    outline: none;
 }
 
 .pages a:active{
@@ -981,6 +1112,8 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--basic-red, red);
     border-color: var(--basic-red, red);
 }
+
+
 
 /* Grids and flexes */
 .page {
