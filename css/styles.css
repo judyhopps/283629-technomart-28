@@ -687,6 +687,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .service-types{
     list-style: none;
+    margin: 0;
+    padding:0;
+    margin-bottom: 99px;
 }
 
 .service-types button{
@@ -697,6 +700,11 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 21px;
     line-height: 30px; 
     color: var(--white, white);
+    width: 100%;
+    padding-left: 22px;
+    padding-top: 13px;
+    padding-bottom: 18px;
+    text-align: start;
 }
 
 .service-types button:hover,
@@ -713,17 +721,37 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--nav-background-grey,#32425C);
 }
 
-.service h3{
-    font-size: 36px;
-    line-height: 24px;
+.services h2{
     text-transform: uppercase;
-    color: var(--nav-background-grey,#32425C);
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 64px;
+    margin-bottom: 25px;
 }
 
-.service p{
+.services p{
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    width: 394px;
+}
+
+.service h3{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--nav-background-grey,#32425C);
+    margin: 0;
+    margin-bottom: 31px;
+    font-weight: normal;
+}
+
+.shop-advantage{
+    margin-top:0;
     font-size: 13px;
     line-height: 24px;
     font-family: 'PT Sans', sans-serif;
+    margin-bottom: 70px;
 }
 
 .send-request-for-credit{
@@ -734,6 +762,24 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 2px;
     font-family: 'Cuprum', sans-serif;
     color: var(--white, white);
+}
+
+/* Services description */
+
+.services-description{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 80px;
+}
+
+
+/* Пока не сделан слайдер для сервисов */
+.quarantee{
+    display: none;
+}
+
+.credit{
+    display: none;
 }
 
 /* Developers info */
@@ -958,6 +1004,12 @@ input[type="search"]::-webkit-search-results-decoration {
     flex-direction: column;
 }
 
+.check-input{
+    --webkit-appearance: none;
+    --moz-appearance:none;
+    appearance: none;
+}
+
 .catalog-filter-supply{
     display: flex;
     flex-direction: column;
@@ -1021,7 +1073,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .perforators-items article{
     border: 1px solid var(--verylight-grey);
-    width: 220px;
     min-height: 318px;
     font-family:'PT Sans', Arial,  sans-serif;
     font-weight: bold;
@@ -1110,6 +1161,7 @@ input[type="search"]::-webkit-search-results-decoration {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top:34px;
 }
 
 .perforator-item a{
@@ -1132,7 +1184,18 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .perforator-item{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* place header for good under header */
+.perforator-item img,
+.perforator-item div{
+    order: -1;
+}
+
+
 
 /* Paging */
 
