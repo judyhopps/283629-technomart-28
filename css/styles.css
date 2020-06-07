@@ -1098,6 +1098,42 @@ input[type="search"]::-webkit-search-results-decoration {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.perforator-item:hover img{
+    display: none;
+}
+
+.perforator-item div{
+    display: none;
+}
+
+.perforator-item:hover div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perforator-item a{
+    text-transform: uppercase;
+    display: inline-block;
+    width: 135px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.perforator-item button{
+    text-transform: uppercase;
+    display: inline-block;
+    width: 135px;
+    padding-bottom: 9px;
+    padding-top: 11px;
+    margin-bottom: 54px;
+}
+
+.perforator-item{
+    text-align: center;
+}
+
 /* Paging */
 
 .pages{
