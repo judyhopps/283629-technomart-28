@@ -954,7 +954,7 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--beige);
 }
 
-.catalog-filter input:disabled+label{
+.check-input:disabled ~ label{
     color: var(--semitransparent-black-for-input, rgba(0, 0, 0, 0.4)); 
 }
 
@@ -1004,16 +1004,51 @@ input[type="search"]::-webkit-search-results-decoration {
     flex-direction: column;
 }
 
+.catalog-filter-producers div{
+    margin-bottom: 16px;
+}
+
+/* Custom check-boxes */
+
 .check-input{
-    --webkit-appearance: none;
-    --moz-appearance:none;
+    /* Нужно ли нам убират пробел? */
+    /* position: absolute;  */
+    -webkit-appearance: none;
+    -moz-appearance:none;
     appearance: none;
+    padding-left: 31px;
+}
+
+.custom-check-box{
+    position: absolute;
+    width: 27px;
+    min-height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    margin-left: -31px;
+}
+
+.check-input:checked ~ .custom-check-box{
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.check-input:focus:not(:checked) .custom-check-box{
+    background-image: url("../img/checkbox-off.svg");
+}
+
+.check-input:checked:focus ~ .custom-check-box{
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.custom-check-box:active+label{
+    color:red;
 }
 
 .catalog-filter-supply{
     display: flex;
     flex-direction: column;
 }
+
 
 /* .catalog-filter-price{
     flex-basis: 207px;
@@ -1034,7 +1069,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog-filter label{
     font-size: 15px;
     line-height: 19px;
-    font-family: 'PT Sans', Arial, sans-serif
+    font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .catalog-filter button{
