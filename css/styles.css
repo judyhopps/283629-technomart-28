@@ -117,7 +117,6 @@ a {
 .header-logo{
     background-color: var(--basic-red, #EE3643);
     width:220px;
-    height: 42px;
     box-shadow: 0px 5px 0px var(--basic-red-shadow, #B52933);
 }
 
@@ -135,18 +134,28 @@ a {
 .high-footer{
     background-color: var(--footer-grey);
     color: var(--white);
-    height: 42px;
 }
 
 input[name="search"]{
     background-color: var(--footer-grey);
     border: none;
     font-family: 'Cuprum' Arial, sans-serif;
-    width: 270px;
 }
 
 label[name="search"]:active{
     opacity: 50%;
+}
+
+.search{
+    position: relative;
+    flex-shrink: 1;
+}
+
+.search-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17px;
 }
 
 .made-order-button{
@@ -193,14 +202,50 @@ a.cart:active
     padding-bottom: 9px;
     padding-top: 9px;
     padding-left: 49px;
-    padding-right: 26px;
+    position: relative;
+}
+
+.cart::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top:50%;
+    left:26px;
+    transform: translateY(-50%);
+    opacity: 0.3;
+}
+
+a.cart:hover::before{
+    opacity: 1;
 }
 
 .bookmarks{
     padding-bottom: 9px;
     padding-top: 9px;
-    padding-left: 43px;
-    padding-right: 24px;
+    padding-left: 42px;
+    position: relative;
+}
+
+.bookmarks::before{
+    position: absolute;
+    content: "";
+
+    width:14px;
+    height:16px;
+    background-image: url("../img/icon-bookmark.svg");
+    background-repeat: no-repeat;
+    top:50%;
+    left:20px;
+    transform:translateY(-50%);
+    opacity:0.3;
+}
+
+.bookmarks:hover::before{
+    opacity: 1;
 }
 
 .search, .bookmarks, .cart, .made-order-button, .navigation {
@@ -223,13 +268,28 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-.search input:focus-within{
+.search{
+    display: flex;
+}
+
+.search-input{
+    padding-left: 42px;
+    position: relative;
+    width:271px;
+}
+
+.search-input:focus{
     outline: none;
     background-color:var(--white, white);
 }
 
-.search input::placeholder{
+
+.search-input::placeholder{
     color: var(--white, white);
+}
+
+.search-input:focus+.search-icon path{
+    fill: var(--basic-red, #EE3643);
 }
 
 /* Shop info */
