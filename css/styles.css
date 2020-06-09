@@ -119,9 +119,6 @@ a {
     width:220px;
     height: 42px;
     box-shadow: 0px 5px 0px var(--basic-red-shadow, #B52933);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .header-logo img{
@@ -157,6 +154,8 @@ label[name="search"]:active{
     width: 150px;
     padding-top:9px;
     padding-bottom: 9px;
+    padding-left: 19px;
+    padding-right: 16px;
 }
 
 .made-order-button:hover{
@@ -190,12 +189,27 @@ a.cart:active
     color: var(--semitransparent-white, white);
 }
 
+.cart{
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-left: 49px;
+    padding-right: 26px;
+}
+
+.bookmarks{
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-left: 43px;
+    padding-right: 24px;
+}
 
 .search, .bookmarks, .cart, .made-order-button, .navigation {
     font-size: 18px;
     line-height: 24px;
 }
+
 .bookmarks, .cart, .made-order-button{
+    box-sizing: border-box;
     width: 150px;
 }
 
@@ -425,6 +439,17 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 40px;
 }
 
+.company-details{
+    box-sizing: border-box;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    display: block;    
+    font-size: 14px;
+    line-height: 18px;
+    width: 192px;
+    text-align: center;
+}
+
 .contacts img{
     width: 300px;
     height: 158px;
@@ -433,6 +458,17 @@ input[type="search"]::-webkit-search-results-decoration {
 .map{
     display: inline-block;
     margin-bottom: 25px;
+}
+
+.write-us{
+    box-sizing: border-box;
+    display: block;    
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    width: 245px;
+    text-align: center;
 }
 
 /* Popups */
@@ -648,12 +684,19 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 940px;
     text-transform: uppercase;
     color: var(--nav-background-grey, grey);
-
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
 .index-headings h2{
     font-size: 30px;
     line-height: 30px;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    margin: 0;
+    margin-left: 28px;
 }
 
 .index-headings a{
@@ -662,6 +705,19 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 14px;
     line-height: 18px;
     color: var(--white);
+    display: block;
+    padding-top:11px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+    margin-right: 19px;
+    text-align: center;
+
+}
+
+/* Popular-goods */
+
+.popular-goods{
+    margin-top: 59px;
 }
 
 /* Popular producers */
@@ -673,6 +729,10 @@ input[type="search"]::-webkit-search-results-decoration {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.popular-producers-section{
+    margin-top:70px;
 }
 
 .popular-producers img:hover{
