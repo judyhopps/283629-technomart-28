@@ -900,10 +900,71 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--basic-red, red);
     width: 192px;
     color: var(--white, white);
+    position: absolute;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    bottom: 27px;
+    left: 24px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 .slider{
     grid-area: slider;
+    position: relative;
+}
+
+.slider-controls button{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+}
+
+.slider-back{
+    top: 115px;
+    left: 25px;
+    background-image: url("../img/icon-left.svg");
+    width: 22px;
+    height: 40px;
+}
+
+.slider-forward{
+    top: 115px;
+    right: 21px;
+    background-image: url("../img/icon-left.svg");
+    width: 22px;
+    height: 40px;
+    transform: scale(-1, 1);
+}
+
+.slider-image-anchors button{
+    border-radius: 50%;
+    background-color: var(--white, white);
+    margin-right: 10px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--white, white);
+    cursor: pointer;
+}
+
+.slider-image-anchors .selected-slider-button{
+    background-color: var(--basic-red, #EE3643);
+}
+
+.slider-image-anchors button:last-child{
+    margin-right: 0;
+}
+
+.slider-image-anchors{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left:0;
+    bottom: 36px;
+    width: 100%;
 }
 
 .slider-part{
@@ -940,6 +1001,8 @@ input[type="search"]::-webkit-search-results-decoration {
     /* пока не сверстан слайдер */
     display: none;
 }
+
+
 
 /* Popular goods */
 
