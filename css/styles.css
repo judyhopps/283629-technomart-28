@@ -12,6 +12,7 @@
 :root{
     --basic-red: #EE3643;
     --basic-red-shadow: #B52933;
+    --credit-red:#FF5357;
     --basic-green: #63A63E;
     --shadow-green:#367315;
     --active-green:#518534;
@@ -614,8 +615,20 @@ input[type="search"]::-webkit-search-results-decoration {
     content: "-";
 }
 
-.about-us p:first-child{
-    margin-bottom: 40px;
+.about-us li{
+    margin-bottom: 12px;
+}
+
+.about-us li:last-child{
+    margin-bottom: 20px;
+}
+
+.about-us p:first-of-type{
+    margin-bottom: 27px;
+}
+
+.about-us p:last-of-type{
+    margin: 0;
 }
 
 .company-details{
@@ -812,7 +825,7 @@ input[type="search"]::-webkit-search-results-decoration {
     
 }
 
-.materials::after{
+.materials::before{
     content: "";
 
     background-image: url("../img/icon-paint.svg");
@@ -830,7 +843,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
 }
 
-.tools::after{
+.tools::before{
     content: "";
 
     background-image: url("../img/icon-tools.svg");
@@ -848,7 +861,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
 }
 
-.equipment:after{
+.equipment:before{
     content: "";
 
     position: absolute;
@@ -866,7 +879,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
 }
 
-.discount::after{
+.discount::before{
     content: "";
 
     position: absolute;
@@ -884,7 +897,7 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
 }
 
-.free-delivery::after{
+.free-delivery::before{
     content: "";
 
     position: absolute;
@@ -1061,6 +1074,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .popular-producers-section{
     margin-top:70px;
+    margin-bottom: 70px;
 }
 
 .popular-producers img:hover{
@@ -1076,6 +1090,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .services{
     background-color: var(--basic-background, #F1F5F7);
+    margin-bottom: 70px;
 }
 
 .service-types{
@@ -1114,12 +1129,53 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--nav-background-grey,#32425C);
 }
 
+.service{
+    position: relative;
+}
+
+.delivery::after{
+    content: "";
+    position: absolute;
+
+    display: block;
+    background-image: url("../img/delivery.svg") ;
+    width:468px;
+    height:261px;
+    bottom: 0;
+    right: 0;
+}
+
+.quarantee::after{
+    content: "";
+    position: absolute;
+
+    background-image: url("../img/guarantee.svg");
+    width:389px;
+    height:283px;
+    display: block;
+    bottom: 0;
+    right: 0;
+}
+
+.credit::after{
+    content: "";
+    position: absolute;
+
+    background-image: url("../img/credit.svg");
+    width: 465px;
+    height: 285px;
+    display: block;
+    bottom: 0;
+    right: 0;
+}
+
 .services h2{
     text-transform: uppercase;
     font-size: 30px;
     line-height: 30px;
     padding-top: 64px;
     margin-bottom: 25px;
+    margin-top: 0px;
 }
 
 .services p{
@@ -1148,13 +1204,19 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .send-request-for-credit{
-    background-color: var(--basic-red, #EE3643);
+    background-color: var(--credit-red,#FF5357);
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    border-radius: 2px;
+    border-radius: 5px;
     font-family: 'Cuprum', sans-serif;
     color: var(--white, white);
+    display: block;
+    width: 195px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 26px;
 }
 
 /* Services description */
@@ -1167,11 +1229,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 /* Пока не сделан слайдер для сервисов */
-.quarantee{
-    display: none;
-}
-
-.credit{
+.hidden-service{
     display: none;
 }
 
@@ -1592,6 +1650,12 @@ input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
 
+.good-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .perforator-item div:last-of-type{
     display: none;
 }
@@ -1629,6 +1693,31 @@ input[type="search"]::-webkit-search-results-decoration {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.new-good{
+    position: relative;
+    overflow: hidden;
+}
+
+.new-good::after{
+    content: "NEW";
+    
+    top: 7px;
+    right: -26px;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: var(--basic-red, #EE3643);
+    transform: rotate(45deg);
+    color: var(--white, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 /* place header for good under header */
