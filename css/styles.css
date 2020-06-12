@@ -1449,6 +1449,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .perforators-items h3{
     font-size: 18px;
     line-height: 20px;
+    margin:0;
+    margin-bottom: 7px;
 }
 
 .perforators-items del, .perforators-items p{
@@ -1457,11 +1459,20 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .perforators-items del{
     color:var(--not-active-price, grey);
+    margin-bottom: 13px;
+}
+
+.perforators-items del+p{
+    margin-top: 21px;
+}
+
+.perforator-item div:last-of-type+p{
+    margin-top: 52px;
 }
 
 .perforators-items p{
     background-color: var(--basic-red, red);
-
+    padding:0;
 }
 
 .perforators-items a{
@@ -1514,19 +1525,22 @@ input[type="search"]::-webkit-search-results-decoration {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.perforator-item:hover img{
+.perforator-item:hover .good-wrapper{
     display: none;
 }
 
-.perforator-item div{
+.perforator-item div:last-of-type{
     display: none;
 }
 
-.perforator-item:hover div{
+.high-limit{
+    min-height: 178px;
+}
+
+.perforator-item:hover div:last-of-type{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:34px;
 }
 
 .perforator-item a{
@@ -1536,6 +1550,7 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    margin-top: 34px;
 }
 
 .perforator-item button{
@@ -1544,7 +1559,6 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 135px;
     padding-bottom: 9px;
     padding-top: 11px;
-    margin-bottom: 54px;
 }
 
 .perforator-item{
