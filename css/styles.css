@@ -580,7 +580,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-weight: normal;
     padding: 0;
     margin:0;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 30px;
 }
@@ -597,10 +597,16 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .about-us{
     width: 478px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contacts{
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .about-us ul{
@@ -611,8 +617,20 @@ input[type="search"]::-webkit-search-results-decoration {
     padding: 0;
 } 
 
+.about-us li{
+    position: relative;
+    padding-left: 37px;
+}
+
 .about-us li::before{
-    content: "-";
+    content: "";
+
+    position: absolute;
+    background-color: var(--basic-red, #EE3643);
+    width: 25px;
+    height: 2px;
+    left: 0;
+    bottom: 40%;
 }
 
 .about-us li{
@@ -620,10 +638,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .about-us li:last-child{
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .about-us p:first-of-type{
+    margin: 0;
     margin-bottom: 27px;
 }
 
@@ -638,13 +657,18 @@ input[type="search"]::-webkit-search-results-decoration {
     display: block;    
     font-size: 14px;
     line-height: 18px;
-    width: 192px;
+    width: 220px;
     text-align: center;
 }
 
 .contacts img{
     width: 300px;
     height: 158px;
+}
+
+.contacts p{
+    margin: 0;
+    margin-bottom: 32px;
 }
 
 .map{
@@ -659,7 +683,6 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 18px;
     padding-top: 11px;
     padding-bottom: 9px;
-    width: 245px;
     text-align: center;
 }
 
