@@ -103,7 +103,23 @@
               <h2 class="catalog-filter-header">Фильтр:</h2>
               <form action="https://echo.htmlacademy.ru/" method="GET">
                 <fieldset class="catalog-filter-price">
-                  <label>Цена:</label>
+                  <legend>Цена:</legend>
+                  <div class="range-filter">
+                    <div class="range-control">
+                      <div class="scale"><div class="bar"></div></div>
+                      <div class="pin pin-min" tabindex="0"></div>
+                      <div class="pin pin-max" tabindex="0"></div>
+                    </div>
+                    <div class="price-control">
+                      <label aria-label="Цена от">
+                        <input type="number" name="min-price" value="0">
+                      </label>
+                      <span class="price-separator"></span>
+                      <label aria-label="Цена до">
+                        <input type="number" name="max-price" value="30000">
+                      </label>
+                    </div>
+                  </div>
                 </fieldset>
                 <fieldset class="catalog-filter-producers">
                   <legend>Производители:</legend>

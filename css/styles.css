@@ -27,6 +27,7 @@
     --lillac:#DC91D8;
     --green-light:#8ED78F;
     --green-bright:#5FBB2D;
+    --price-green: #00CA74;
     --dark-red:#BA2732;
     --verylight-grey:#EAEAEA;
     --footer-grey:#293449;
@@ -46,6 +47,9 @@
     --semtransparent-black: rgba(0, 0, 0, 0.3);
     --semitransparent-black-for-input: rgba(0, 0, 0, 0.4);
     --semitransparent-white-for-buttons: rgb(255, 255, 255, 0.3);
+    --grey-for-scale: #d7dcde;
+    --pin-grey:#ABABAB;
+    --pin-shadow-grey: rgba(171, 171, 171, 0.3);
 }
 
 @font-face{
@@ -1495,6 +1499,11 @@ input[type="search"]::-webkit-search-results-decoration {
     text-transform: uppercase;
 }
 
+.catalog-filter fieldset{
+    margin:0;
+    padding: 0;
+}
+
 .catalog-filter{
     display: flex;
     width: 220px;
@@ -1512,6 +1521,87 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog-filter-producers div{
     margin-bottom: 16px;
+}
+
+.range-filter{
+    width: 220px;
+    margin-top: 11px;
+    margin-bottom: 9px;
+}
+
+.range-control{
+    height: 80px;
+    background-color: var(--beige, #F7F3EC);
+    border-radius: 5px;
+    padding-top: 39px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    margin-bottom: 9px;
+}
+
+.range-control .scale {
+    height: 2px;
+    background-color: var(--grey-for-scale, #d7dcde);
+}
+
+.range-control .bar{
+    width: 80%;
+    height: 100%;
+    background-color: var(--price-green, #00CA74);
+}
+
+.pin{
+    position: absolute; 
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-width: 8px;
+    border-color: var(--white, white);
+    background-color: var(--pin-grey, #ABABAB);
+    border-style: solid;
+    box-shadow: 0 2px 1px 0 var(--pin-shadow-grey, rgba(171, 171, 171, 0.3));
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.pin-max{
+    left:18px;
+}
+
+.pin-min{
+    left: 160px;
+}
+
+.price-control input{
+    font-family: PT Sans;
+    font-size: 17px;
+    line-height: 18px;
+    border-radius: 5px;
+    background-color: var(--beige, #F7F3EC);
+    width: 95px;
+    text-align: center;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px ;
+    box-sizing: border-box;
+}
+
+.price-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-separator{
+    background-color: #444444;
+    width: 9px;
+    height: 1px;
+    align-self: center;
 }
 
 /* Custom check-boxes */
