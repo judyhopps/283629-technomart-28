@@ -447,7 +447,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .account-managment a{
     font-size: 21px;
-    /* line-height: 21px; */
+    line-height: 21px; 
     color:var(--black, black);
     background-color: var(--white);
 }
@@ -456,6 +456,26 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 16px;
     line-height: 18px;
     color: var(--nav-background-grey,grey);
+    background-color: transparent;
+    position: relative;
+    padding-right: 34px;
+}
+
+.login-features a.profile{
+    padding-right: 0;
+}
+
+.login-features a:not(.profile)::after{
+    content: "";
+
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:14px;
+    background-color:var(--nav-background-grey,grey);
 }
 
 .account-managment a:hover{
