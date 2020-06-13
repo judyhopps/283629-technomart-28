@@ -1517,12 +1517,14 @@ input[type="search"]::-webkit-search-results-decoration {
 /* Custom check-boxes */
 
 .check-input{
-    /* Нужно ли нам убират пробел? */
-    /* position: absolute;  */
     -webkit-appearance: none;
     -moz-appearance:none;
     appearance: none;
-    padding-left: 31px;
+}
+
+.checkbox-label{
+    position: relative;
+    padding-left: 35px;
 }
 
 .custom-check-box{
@@ -1531,23 +1533,24 @@ input[type="search"]::-webkit-search-results-decoration {
     min-height: 23px;
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
-    margin-left: -31px;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+    opacity: 0.79;
 }
 
-.check-input:checked ~ .custom-check-box{
+.check-input:checked+.checkbox-label .custom-check-box{
     background-image: url("../img/checkbox-on.svg");
 }
 
-.check-input:focus:not(:checked) .custom-check-box{
-    background-image: url("../img/checkbox-off.svg");
+.check-input:focus+.checkbox-label .custom-check-box,
+.check-input:active+.checkbox-label .custom-check-box,
+.check-input:hover+.checkbox-label .custom-check-box{
+    opacity: 1;
 }
 
-.check-input:checked:focus ~ .custom-check-box{
-    background-image: url("../img/checkbox-on.svg");
-}
-
-.custom-check-box:active+label{
-    color:red;
+.check-input:disabled+.checkbox-label .custom-check-box{
+    opacity: 0.3;
 }
 
 .catalog-filter-supply{
