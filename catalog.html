@@ -130,8 +130,14 @@
                 </fieldset>
                 <fieldset class="catalog-filter-supply">
                   <legend>ПИТАНИЕ:</legend>
-                  <p><input type="radio" name="supply" value="battery" id="battery-field" checked><label for="battery-field">АККУМУЛЯТОРНЫЕ</label></p>
-                  <p><input type="radio" name="supply" value="electricity" id="electricity-field"><label for="electricity-field">СЕТЕВЫЕ</label></p>
+                  <p>
+                    <input class="radio-input" type="radio" name="supply" value="battery" id="battery-field" checked>
+                    <label class="radio-label" for="battery-field"><span class="custom-radio-button"></span>АККУМУЛЯТОРНЫЕ</label>
+                  </p>
+                  <p>
+                    <input class="radio-input" type="radio" name="supply" value="electricity" id="electricity-field">
+                    <label class="radio-label" for="electricity-field"><span class="custom-radio-button"></span>СЕТЕВЫЕ</label>
+                  </p>
                 </fieldset>
                 <button type="submit">ПОКАЗАТЬ</button>
               </form>

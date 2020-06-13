@@ -1558,6 +1558,48 @@ input[type="search"]::-webkit-search-results-decoration {
     flex-direction: column;
 }
 
+.radio-input{
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance: none;
+}
+
+.radio-label{
+    position: relative;
+    padding-left: 35px;
+}
+
+.custom-radio-button{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/radio-off.svg");
+    opacity: 0.79;
+    background-repeat: no-repeat;
+
+    top:50%;
+    transform: translateY(-50%);
+    left:0;
+}
+
+.radio-input:checked+.radio-label .custom-radio-button{
+    background-image: url("../img/radio-on.svg");
+}
+
+.radio-input:focus+.radio-label .custom-radio-button,
+.radio-input:active+.radio-label .custom-radio-button,
+.radio-input:hover+.radio-label .custom-radio-button
+{
+    opacity: 1;
+}
+
+.radio-input:disabled+.radio-label .custom-radio-button{
+    opacity: 0.3;
+}
+
+.radio-input:disabled+.radio-label{
+    color: var(--semitransparent-black-for-input, rgba(0, 0, 0, 0.4));
+}
 
 /* .catalog-filter-price{
     flex-basis: 207px;
