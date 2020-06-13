@@ -409,11 +409,13 @@ input[type="search"]::-webkit-search-results-decoration {
     transform: translateY(-50%);
 }
 
-.login-name:hover path{
+.login-name:hover path,
+.logout:hover path{
     fill: var(--basic-grey, #3D546F);
 }
 
-.login-name:active path{
+.login-name:active path,
+a.logout:active path{
     fill: var(--basic-greylight, #C5C5C5);
 }
 
@@ -431,6 +433,11 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.logout:hover path{
+    fill: var(--basic-grey, #3D546F);
+}
+
 
 .account-buttons li:first-child
 {
@@ -488,7 +495,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .account-managment a:active,
-.account-managment a.logout:active,
 .account-managment a.login-name:active
 {
     color: var(--basic-greylight, grey);
