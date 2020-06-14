@@ -705,7 +705,7 @@ a.logout:active path{
 }
 
 .map{
-    display: inline-block;
+    display: block;
     margin-bottom: 25px;
 }
 
@@ -1596,7 +1596,7 @@ a.logout:active path{
 }
 
 .social-media  a{
-    display: inline-block;
+    display: block;
     width: 42px;
     height: 42px;
     background-color: var(--social-dark-grey, grey);
@@ -1730,7 +1730,7 @@ a.logout:active path{
 
 .bread-crumbs-home{
     background-image: url("../img/icon-home.svg");
-    display: inline-block;
+    display: block;
     width: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -2189,7 +2189,7 @@ fieldset.catalog-filter-supply{
 
 .perforator-item a{
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     width: 135px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -2199,7 +2199,7 @@ fieldset.catalog-filter-supply{
 
 .perforator-item button{
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     width: 135px;
     padding-bottom: 9px;
     padding-top: 11px;
@@ -2264,7 +2264,7 @@ fieldset.catalog-filter-supply{
     color: var(--black);
     text-transform: uppercase;
     box-shadow: none;
-    display: inline-block;
+    display: block;
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
