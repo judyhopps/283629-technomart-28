@@ -1398,6 +1398,8 @@ a.logout:active path{
     margin-bottom: 70px;
 }
 
+
+
 .service-types{
     list-style: none;
     margin: 0;
@@ -1481,6 +1483,20 @@ a.logout:active path{
     padding-top: 64px;
     margin-bottom: 25px;
     margin-top: 0px;
+}
+
+.services .container{
+    position: relative;
+}
+
+.list-shadow{
+    position: absolute;
+    background-image: url("../img/line.png");
+    background-repeat: no-repeat;
+    top: 186px;
+    left: 240px;
+    width: 10px;
+    height: 279px;
 }
 
 .services p{
