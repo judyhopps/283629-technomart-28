@@ -725,11 +725,12 @@ a.logout:active path{
 }
 
 .modal{
-    position: relative;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    margin: auto;
     border-top: 7px solid var(--basic-red, #EE3643) ;
 }
 
@@ -765,6 +766,8 @@ a.logout:active path{
 }
 
 .feedback{
+    bottom: 300px;
+    top:auto;
     box-sizing: border-box;
     width: 620px;
     background-color: var(--white, white);
