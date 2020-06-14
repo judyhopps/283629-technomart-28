@@ -52,6 +52,7 @@
     --pin-shadow-grey: rgba(171, 171, 171, 0.3);
     --price-separator-brown: #444444;
     --form-grey:#F4F4F4;
+    --good-info-grey: #F1F1F1;
 }
 
 @font-face{
@@ -720,7 +721,7 @@ a.logout:active path{
 
 /* Popups */
 
-.feedback, .map-popup, .good-info-cart{
+.feedback, .map-popup{
     display: none;
 }
 
@@ -731,7 +732,8 @@ a.logout:active path{
     bottom: 0;
     left: 0;
     margin: auto;
-    border-top: 7px solid var(--basic-red, #EE3643) ;
+    border-top: 7px solid var(--basic-red, #EE3643);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .close-button{
@@ -771,7 +773,7 @@ a.logout:active path{
     box-sizing: border-box;
     width: 620px;
     background-color: var(--white, white);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    
 }
 
 .map-popup{
@@ -782,9 +784,78 @@ a.logout:active path{
     height: 449px;
 }
 
+.good-info-cart{
+    width: 620px;
+    top:400px;
+    bottom: auto;
+    background-color: var(--white, white);
+    text-align: center;
+}
+
+.succesful-adding-wrapper{
+    position: relative;
+}
+
+.good-info-cart p{
+    margin-top: 73px;
+    margin-bottom: 67px;
+    font-family: 'Cuprum', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 150px;
+    margin-right: 70px;
+}
+
+
+.good-info-cart .buttons-section{
+    padding-bottom: 37px;
+    padding-top:37px;
+    background-color: var(--good-info-grey, #F1F1F1);
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-section a, .buttons-section button{
+    box-sizing: border-box;
+    width: 192px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    border: none;
+    display: block;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.buttons-section a{
+    background-color: var(--basic-red, #EE3643);
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--white, white);
+}
+
+.buttons-section button{
+    background-color: var(--white, white);
+    color: var(--black, black);
+}
+
+.ok-icon{
+    width: 66px;
+    height: 66px;
+    top: 55px;
+    left: 81px;
+    background-image: url("../img/icon-mark.svg");
+    top: 50%;
+    left: 81px;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
 .modal-map iframe {
     border: none;
-  }
+}
 
 .feedback label{
     display: block;

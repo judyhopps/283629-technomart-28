@@ -369,13 +369,18 @@
           </div>
         </div>
       </footer>
-      <section class="good-info-cart">
+      <section class="good-info-cart modal">
         <!--карточка, всплывающая после добавления товара в корзину-->
         <h2 class="visually-hidden">Информация о состоянии корзины</h2>
-        <p>Товар добавлен в корзину</p>
-        <a href="blank.html">Оформить заказ</a>
-        <button>Продолжить покупки</button><!--думаю, что это кнопка, т.к. в этом случае скорее всего просто закроется окно-->
-        <button><span class="visually-hidden">Закрыть окно</span></button>
+        <div class="succesful-adding-wrapper">
+          <span class="ok-icon"></span>
+          <p>Товар добавлен в корзину</p>
+        </div>
+        <div class="buttons-section">
+          <a href="blank.html">Оформить заказ</a>
+          <button>Продолжить покупки</button><!--думаю, что это кнопка, т.к. в этом случае скорее всего просто закроется окно-->
+        </div>
+        <button class="close-button"><span class="visually-hidden">Закрыть окно</span></button>
       </section>
     </body>
 </html>
