@@ -1735,6 +1735,7 @@ a.logout:active path{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 14px;
 }
 
 .catalog-filter{
@@ -1788,9 +1789,14 @@ a.logout:active path{
 .catalog-sort{
     background-color: var(--beige, #F7F3EC);
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 2px;
+}
+
+.catalog-sort h2.catalog-sort-header{
+    padding-left: 21px;
+    margin-right: 140px;
 }
 
 .catalog-sort h2,
@@ -1821,6 +1827,14 @@ a.logout:active path{
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: var(--basic-red, #EE3643);
+}
+
+.catalog-sort a:not(:last-of-type):not(.sort-link){
+    margin-right:68px;
+}
+
+.catalog-sort a:first-child{
+    padding-left: 42px;
 }
 
 .catalog-sort a:hover{
