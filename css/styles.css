@@ -720,7 +720,7 @@ a.logout:active path{
 
 /* Popups */
 
-.map-popup, .good-info-cart{
+.feedback, .map-popup, .good-info-cart{
     display: none;
 }
 
@@ -773,6 +773,18 @@ a.logout:active path{
     background-color: var(--white, white);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
+
+.map-popup{
+    bottom: 300px;
+    top:auto;
+    box-sizing: border-box;
+    width: 943px;
+    height: 449px;
+}
+
+.modal-map iframe {
+    border: none;
+  }
 
 .feedback label{
     display: block;
