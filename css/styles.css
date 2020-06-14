@@ -51,6 +51,7 @@
     --pin-grey:#ABABAB;
     --pin-shadow-grey: rgba(171, 171, 171, 0.3);
     --price-separator-brown: #444444;
+    --form-grey:#F4F4F4;
 }
 
 @font-face{
@@ -732,13 +733,42 @@ a.logout:active path{
     border-top: 7px solid var(--basic-red, #EE3643) ;
 }
 
+.close-button{
+    position: absolute;
+    right: 11px;
+    top: 21px;
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+    border: 0;
+    cursor: pointer;
+}
+
+.close-button::before,
+.close-button::after{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 4px;
+    top: 8px;
+    left: -3px;
+    background-color: var(--basic-red, #EE3643);
+    border-radius: 2px;
+}
+
+.close-button::before{
+    transform: rotate(45deg);
+}
+
+.close-button::after{
+    transform: rotate(-45deg);
+}
+
 .feedback{
     box-sizing: border-box;
     width: 620px;
-    padding-right: 80px;
-    padding-left: 80px;
-
     background-color: var(--white, white);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .feedback label{
@@ -767,25 +797,32 @@ a.logout:active path{
     color: var(--not-active-price, #A9A9A9);
 }
 
-.feedback form{
+.user-input-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-right: 80px;
+    padding-left: 80px;
 }
+
 
 .send-letter-section{
     flex-grow: 1;
 }
 
 .send-button-area{
-    flex-grow: 1;
     text-align: center;
-
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 37px;
+    padding-top: 37px;
+    margin-top: 37px;
+    background-color: var(--form-grey, #F4F4F4);
 }
 
 .send-button-area button{
     box-sizing: border-box;
-    width: 100%;
+    width: 460px;
     background-color: var(--basic-red, #EE3643);
     padding-top: 11px;
     padding-bottom: 9px;

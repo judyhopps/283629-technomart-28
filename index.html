@@ -331,24 +331,26 @@
     <section class="feedback modal">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru/" method="POST">
-        <p>
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" id="name-field" name="user-name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="mail-field">Ваш e-mail:</label>
-          <input type="email" name="user-mail" id="mail-field" placeholder="email@example.com">
-        </p>
-        <p class="send-letter-section">
-          <label for="letter-field">Текст письма:</label>
-          <textarea name="letter" id="letter-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </p>
+        <div class="user-input-section">
+          <p>
+            <label for="name-field">Ваше имя:</label>
+            <input type="text" id="name-field" name="user-name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="mail-field">Ваш e-mail:</label>
+            <input type="email" name="user-mail" id="mail-field" placeholder="email@example.com">
+          </p>
+          <p class="send-letter-section">
+            <label for="letter-field">Текст письма:</label>
+            <textarea name="letter" id="letter-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
         <div class="send-button-area">
           <button type="submit">Отправить</button>
         </div>
       </form>
       <div >
-        <button type="button"><span class="visually-hidden">Закрыть</span></button>
+        <button type="button" class="close-button"><span class="visually-hidden">Закрыть</span></button>
       </div>
     </section>
     <section class="map-popup">
