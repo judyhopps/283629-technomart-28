@@ -1637,7 +1637,7 @@ a.logout:active path{
     text-transform: uppercase;
     font-size: 30px;
     line-height: 30px;
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', 'Arial', sans-serif;
     padding-top: 64px;
     padding-bottom: 25px;
     padding-left: 0;
@@ -2114,6 +2114,8 @@ p.price-tag{
     padding-top: 10px;
     position: relative;
     margin-top:0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 p.price-tag::after{
