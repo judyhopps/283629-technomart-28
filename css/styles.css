@@ -392,9 +392,10 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-left: 51px;
 }
 
-.login-features{
+.logined-user ul.login-features{
     display: flex;
     justify-content: center;
+    margin-top:8px;
 }
 
 .login-name{
@@ -1655,6 +1656,8 @@ a.logout:active path{
     padding-top: 64px;
     padding-bottom: 25px;
     padding-left: 0;
+    margin-bottom: 0;
+    margin-top:0;
 }
 .about-perforators p{
     padding-bottom: 68px;
@@ -1854,6 +1857,10 @@ a.logout:active path{
     flex-direction: column;
 }
 
+.catalog-filter form{
+    margin-top: 14px;
+}
+
 .catalog-filter-header{
     flex-basis: 38px;
 }
@@ -1874,13 +1881,12 @@ fieldset.catalog-filter-producers{
 }
 
 .catalog-filter-producers div{
-    margin-bottom: 16px;
+    margin-top: 19px;
 }
 
 .range-filter{
     width: 220px;
     margin-top: 11px;
-    margin-bottom: 9px;
 }
 
 .range-control{
@@ -1938,10 +1944,11 @@ fieldset.catalog-filter-producers{
     border-radius: 5px;
     background-color: var(--beige, #F7F3EC);
     width: 95px;
+    padding-left: 18px;
     text-align: center;
     border: none;
     padding-bottom: 10px;
-    padding-top: 10px ;
+    padding-top: 8px ;
     box-sizing: border-box;
 }
 
@@ -1968,7 +1975,7 @@ fieldset.catalog-filter-producers{
 
 .checkbox-label{
     position: relative;
-    padding-left: 35px;
+    padding-left: 32px;
 }
 
 .custom-check-box{
@@ -2002,7 +2009,16 @@ fieldset.catalog-filter-supply{
     flex-direction: column;
     margin-top: 18px;
     border:none;
-    margin-bottom: 34px;
+    margin-bottom: 16px;
+}
+
+fieldset.catalog-filter-supply legend{
+    margin-bottom: 27px;
+}
+
+fieldset.catalog-filter-supply p{
+    margin:0;
+    margin-bottom: 22px;
 }
 
 .radio-input{
@@ -2090,7 +2106,7 @@ fieldset.catalog-filter-supply{
 
 .perforators-items article{
     border: 1px solid var(--verylight-grey);
-    min-height: 318px;
+    min-height: 316px;
     font-family:'PT Sans', Arial,  sans-serif;
     font-weight: bold;
     font-size: 17px;
@@ -2117,7 +2133,7 @@ fieldset.catalog-filter-supply{
 }
 
 .perforator-item div:last-of-type+p{
-    margin-top: 31px;
+    margin-top: 33px;
 }
 
 p.price-tag{
@@ -2127,9 +2143,10 @@ p.price-tag{
     padding-bottom: 10px;
     padding-top: 10px;
     position: relative;
-    margin-top:0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    margin-top: 2px;
+    margin-right: 7px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 p.price-tag::after{
@@ -2289,6 +2306,7 @@ p.price-tag::after{
     margin-top: 48px;
     width: 284px;
     justify-content: space-between;
+    margin-bottom: 59px;
 }
 
 .pages a{
