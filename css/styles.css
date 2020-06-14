@@ -194,6 +194,10 @@ label[name="search"]:active{
     width:100%;
 }
 
+.header.catalog-header{
+    margin-bottom: 21px;
+}
+
 .high-footer-wrapper{
     display: flex;
     flex-direction: row;
@@ -318,7 +322,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 16px;
     line-height: 23px;
     color:var(--basic-red, red);
-    width: 208px;
+    width: 210px;
     margin-left: 30px;
     margin-top:43px;
 }
@@ -365,8 +369,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .header-shop-contacts{
-    margin-bottom: 40px;
-    margin-left: 93px;
+    margin-bottom: 38px;
+    margin-left: 81px;
 }
 
 .account-managment{
@@ -556,10 +560,11 @@ a.logout:active path{
 
 .navigation a{
     color: var(--white);
-    display: flex;
+    display: block; 
     align-items: center;
-    justify-content: center;
     width: 100%;
+    text-align: center;
+    padding-top: 16px;
 }
 
 .navigation a:hover{
@@ -580,7 +585,7 @@ a.logout:active path{
     margin-bottom: 60px;
     display: flex;
     justify-content: space-around;
-    min-height: 55px;
+    min-height: 60px;
     color: var(--white,white);
 }
 
@@ -589,6 +594,15 @@ a.logout:active path{
     align-items: stretch;
     flex-grow: 1;
 }
+
+.navigation li:first-child{
+    padding-left: 20px;
+}
+
+.navigation li:last-child{
+    padding-right: 20px;
+}
+
 
 /* .navigation{
     box-shadow: inset 0px -5px 0px var(--footer-grey);
