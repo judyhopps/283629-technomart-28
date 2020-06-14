@@ -1597,8 +1597,8 @@ a.logout:active path{
 
 .social-media  a{
     display: inline-block;
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     background-color: var(--social-dark-grey, grey);
     border-radius: 50%;
     background-repeat: no-repeat;
