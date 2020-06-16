@@ -2049,7 +2049,7 @@ fieldset.catalog-filter-supply p{
 .custom-radio-button{
     position: absolute;
     width: 25px;
-    height: 25px;
+    height: 26px;
     background-image: url("../img/radio-off.svg");
     opacity: 0.79;
     background-repeat: no-repeat;
