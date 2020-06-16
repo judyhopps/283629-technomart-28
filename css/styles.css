@@ -1261,6 +1261,7 @@ a.logout:active path{
     background-image: url("../img/icon-left.svg");
     width: 22px;
     height: 40px;
+    cursor: pointer;
 }
 
 .slider-forward{
@@ -1270,6 +1271,7 @@ a.logout:active path{
     width: 22px;
     height: 40px;
     transform: scale(-1, 1);
+    cursor: pointer;
 }
 
 .slider-image-anchors button{
@@ -1332,10 +1334,17 @@ a.logout:active path{
 .slider-drills{
     background-image: url("../img/slider-drill-light.jpg");
     /* пока не сверстан слайдер */
-    display: none;
+    
 }
 
+.slider-back:disabled,
+.slider-forward:disabled{
+    cursor: not-allowed;
+}
 
+.hidden-slider{
+    display: none;
+}
 
 /* Popular goods */
 
