@@ -1466,7 +1466,8 @@ a.logout:active path{
     background-color: var(--footer-grey, #293449);
 }
 
-.service-types button:active{
+.service-types button:active,
+.service-types button.selected-service{
     border:none;
     outline: none;
     background-color: var(--white, white);
