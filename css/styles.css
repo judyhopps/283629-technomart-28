@@ -1274,6 +1274,12 @@ a.logout:active path{
     cursor: pointer;
 }
 
+.slider-back:focus, 
+.slider-forward:focus{
+    outline: none;
+    background-color: var(--semitransparent-black-for-input, rgba(0, 0, 0, 0.4));
+}
+
 .slider-image-anchors button{
     border-radius: 50%;
     background-color: var(--white, white);
@@ -1337,10 +1343,17 @@ a.logout:active path{
     
 }
 
+.slider-drill:focus,
+.slider-perforator:focus{
+    outline: none;
+}
+
 .slider-back:disabled,
 .slider-forward:disabled{
     cursor: not-allowed;
 }
+
+
 
 .hidden-slider{
     display: none;
