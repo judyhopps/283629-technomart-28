@@ -1457,12 +1457,16 @@ a.logout:active path{
     padding-top: 13px;
     padding-bottom: 18px;
     text-align: start;
+    border-top: 1px solid var(--button-shadow-grey, #405069);
+    border-bottom: 1px solid var(--footer-grey, #293449);
 }
 
 .service-types button:hover,
 .service-types button:focus{
     border:none;
     outline: none;
+    border-top: 1px solid var(--button-shadow-grey, #405069);
+    border-bottom: 1px solid var(--footer-grey, #293449);
     background-color: var(--footer-grey, #293449);
 }
 
@@ -1472,6 +1476,8 @@ a.logout:active path{
     outline: none;
     background-color: var(--white, white);
     color: var(--nav-background-grey,#32425C);
+    border-top: 1px solid var(--white, white);
+    border-bottom:  1px solid var(--white, white);
 }
 
 .service{
