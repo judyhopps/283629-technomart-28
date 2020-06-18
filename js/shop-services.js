@@ -8,9 +8,9 @@ deliveryButton.addEventListener(
     "click",
     function(){
 
-        deliveryButton.classList.add("selected-service");
-        quaranteeButton.classList.remove("selected-service");
-        creditButton.classList.remove("selected-service");
+        deliveryButton.classList.add('selected-service');
+        quaranteeButton.classList.remove('selected-service');
+        creditButton.classList.remove('selected-service');
 
         showDivWithClass('delivery');
 
@@ -21,9 +21,9 @@ deliveryButton.addEventListener(
 quaranteeButton.addEventListener(
     "click",
     function(){
-        deliveryButton.classList.remove("selected-service");
-        quaranteeButton.classList.add("selected-service");
-        creditButton.classList.remove("selected-service");
+        deliveryButton.classList.remove('selected-service');
+        quaranteeButton.classList.add('selected-service');
+        creditButton.classList.remove('selected-service');
 
         showDivWithClass('quarantee');
     }
@@ -32,9 +32,9 @@ quaranteeButton.addEventListener(
 creditButton.addEventListener(
     "click",
     function(){
-        deliveryButton.classList.remove("selected-service");
-        quaranteeButton.classList.remove("selected-service");
-        creditButton.classList.add("selected-service");
+        deliveryButton.classList.remove('selected-service');
+        quaranteeButton.classList.remove('selected-service');
+        creditButton.classList.add('selected-service');
 
         showDivWithClass('credit');
     }

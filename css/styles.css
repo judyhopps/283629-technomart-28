@@ -736,7 +736,11 @@ a.logout:active path{
 
 /* Popups */
 
-.feedback, .map-popup, .good-info-cart{
+.feedback, .good-info-cart{
+    display: none;
+}
+
+.hidden-window{
     display: none;
 }
 
