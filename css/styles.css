@@ -53,6 +53,7 @@
     --price-separator-brown: #444444;
     --form-grey:#F4F4F4;
     --good-info-grey: #F1F1F1;
+    --hover-red-button:#CA2C37;
 }
 
 @font-face{
@@ -736,12 +737,18 @@ a.logout:active path{
 
 /* Popups */
 
-.feedback, .good-info-cart{
+.good-info-cart{
     display: none;
 }
 
 .hidden-window{
     display: none;
+}
+
+.map-popup{
+    background-image: url("../img/mini-map.jpg");
+    width: 449px;
+    height: 943px;
 }
 
 .modal{
@@ -753,6 +760,58 @@ a.logout:active path{
     margin: auto;
     border-top: 7px solid var(--basic-red, #EE3643);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes bounce{
+    0% {transform: translateY(360px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
+
+.show-window{
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-error{
+    animation: shake 0.6s;
+}
+
+a.main-button:hover{
+    background-color: var(--hover-red-button, #CA2C37);
+}
+
+.feedback button:not(.close-button):active{
+    background-color: var(--dark-red, #BA2732);
+    outline: none;
+}
+
+.feedback button:not(.close-button):hover,
+.feedback button:not(.close-button):focus
+{
+    background-color: var(--hover-red-button, #CA2C37);
+    outline: none;
 }
 
 .close-button{
@@ -786,8 +845,28 @@ a.logout:active path{
     transform: rotate(-45deg);
 }
 
+.close-button:hover::before,
+.close-button:hover::after,
+.close-button:focus::before,
+.close-button:focus::after
+{
+    background-color: var(--hover-red-button, #CA2C37);
+}
+
+
+.close-button:active::before,
+.close-button:active::after
+{
+    background-color: var(--dark-red, #BA2732);
+}
+
+.close-button:focus,
+.close-button:active{
+    outline: none;
+}
+
 .feedback{
-    bottom: 300px;
+    bottom: 352px;
     top:auto;
     box-sizing: border-box;
     width: 620px;
@@ -796,7 +875,7 @@ a.logout:active path{
 }
 
 .map-popup{
-    bottom: 300px;
+    bottom: 333px;
     top:auto;
     box-sizing: border-box;
     width: 943px;
