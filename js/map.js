@@ -16,3 +16,15 @@ mapWindow.addEventListener(
         mapWindow.classList.add('hidden-window');
     }
 )
+
+window.addEventListener(
+    "keydown",
+    function(e){
+        if(e.keyCode === 27){
+            if(!mapWindow.classList.contains('hidden-window')){
+                e.preventDefault();
+                mapWindow.classList.add('hidden-window');
+            }
+        }
+    }
+);

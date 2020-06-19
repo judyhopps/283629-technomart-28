@@ -34,3 +34,15 @@ continueShoppingButton.addEventListener(
         cartInfoWindow.classList.add('hidden-window');
     }
 );
+
+window.addEventListener(
+    "keydown",
+    function(e){
+        if(e.keyCode === 27){
+            if(!cartInfoWindow.classList.contains('hidden-window')){
+                e.preventDefault();
+                cartInfoWindow.classList.add('hidden-window');
+            }
+        }
+    }
+);

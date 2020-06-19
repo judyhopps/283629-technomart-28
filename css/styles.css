@@ -158,6 +158,7 @@ label[name="search"]:active{
 
 .search{
     position: relative;
+    flex-grow: 1;
 }
 
 .search-icon{
@@ -219,8 +220,17 @@ a.cart:active
 .cart{
     padding-bottom: 9px;
     padding-top: 9px;
-    padding-left: 49px;
+    
+    padding-left: 35px;
     position: relative;
+}
+
+a.cart{
+    width: 136px;
+}
+
+a.bookmarks{
+    width: 166px;
 }
 
 .cart::before{
@@ -232,7 +242,7 @@ a.cart:active
     background-repeat: no-repeat;
     background-position: 0 0;
     top:50%;
-    left:26px;
+    left:12px;
     transform: translateY(-50%);
     opacity: 0.3;
 }
@@ -327,7 +337,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 16px;
     line-height: 23px;
     color:var(--basic-red, red);
-    width: 210px;
+    width: 221px;
     margin-left: 30px;
     margin-top:43px;
 }
@@ -1588,6 +1598,7 @@ a.main-button:hover{
     height:261px;
     bottom: 0;
     right: 0;
+    z-index: 1;
 }
 
 .quarantee::after{
@@ -1600,6 +1611,7 @@ a.main-button:hover{
     display: block;
     bottom: 0;
     right: 0;
+    z-index: 1;
 }
 
 .credit::after{
@@ -1612,6 +1624,7 @@ a.main-button:hover{
     display: block;
     bottom: 0;
     right: 0;
+    z-index: 1;
 }
 
 .services h2{
@@ -1642,6 +1655,8 @@ a.main-button:hover{
     font-size: 13px;
     line-height: 24px;
     width: 395px;
+    position: relative; /*чтобы текст не перкрывался картинкой*/
+    z-index: 100;
 }
 
 .service h3{
