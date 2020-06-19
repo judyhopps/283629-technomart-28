@@ -177,6 +177,10 @@ label[name="search"]:active{
     padding-right: 16px;
 }
 
+.goods-inside{
+    background-color: var(--basic-red, #EE3643);
+}
+
 .made-order-button:hover{
     background-color: var(--green-bright, green);
 }
@@ -736,11 +740,6 @@ a.logout:active path{
 }
 
 /* Popups */
-
-.good-info-cart{
-    display: none;
-}
-
 .hidden-window{
     display: none;
 }
@@ -888,6 +887,18 @@ a.main-button:hover{
     bottom: auto;
     background-color: var(--white, white);
     text-align: center;
+}
+
+.continue-shopping:hover,
+.continue-shopping:focus
+{
+    color: var(--basic-red, #EE3643);
+    outline: none;
+}
+
+.continue-shopping:active{
+    color: var(--basic-greylight, grey);
+    outline: none;
 }
 
 .succesful-adding-wrapper{

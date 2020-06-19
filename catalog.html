@@ -23,7 +23,7 @@
             </svg>
           </form>
           <a href="blank.html" class="bookmarks">Закладки: <span>0</span></a>
-          <a href="blank.html" class="cart">Корзина: <span>10</span></a>
+          <a href="blank.html" class="cart goods-inside">Корзина: <span>10</span></a>
           <a href="blank.html" class="made-order-button">Оформить заказ</a>
         </div>
         </section>
@@ -371,7 +371,7 @@
           </div>
         </div>
       </footer>
-      <section class="good-info-cart modal">
+      <section class="good-info-cart modal hidden-window">
         <!--карточка, всплывающая после добавления товара в корзину-->
         <h2 class="visually-hidden">Информация о состоянии корзины</h2>
         <div class="succesful-adding-wrapper">
@@ -379,10 +379,11 @@
           <p>Товар добавлен в корзину</p>
         </div>
         <div class="buttons-section">
-          <a href="blank.html">Оформить заказ</a>
-          <button>Продолжить покупки</button><!--думаю, что это кнопка, т.к. в этом случае скорее всего просто закроется окно-->
+          <a href="blank.html" class="main-button">Оформить заказ</a>
+          <button class="continue-shopping">Продолжить покупки</button><!--думаю, что это кнопка, т.к. в этом случае скорее всего просто закроется окно-->
         </div>
         <button class="close-button"><span class="visually-hidden">Закрыть окно</span></button>
       </section>
+      <script src="js/cart.js"></script>
     </body>
 </html>
