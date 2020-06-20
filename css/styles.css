@@ -54,6 +54,7 @@
     --form-grey:#F4F4F4;
     --good-info-grey: #F1F1F1;
     --hover-red-button:#CA2C37;
+    --shadow-transparent:rgba(0, 0, 0, 0.15);
 }
 
 @font-face{
@@ -138,16 +139,16 @@ a {
 }
 
 .header-logo:active{
-    background-color: var(--dark-red, red);
+    background-color: var(--dark-red, #BA2732);
 }
 
 .high-footer{
-    background-color: var(--footer-grey);
+    background-color: var(--footer-grey, #293449);
     color: var(--white);
 }
 
 input[name="search"]{
-    background-color: var(--footer-grey);
+    background-color: var(--footer-grey, #293449);
     border: none;
     font-family: 'Cuprum' Arial, sans-serif;
 }
@@ -170,7 +171,7 @@ label[name="search"]:active{
 }
 
 .made-order-button{
-    background-color: var(--basic-green, green);
+    background-color: var(--basic-green, #63A63E);
     width: 150px;
     padding-top:9px;
     padding-bottom: 9px;
@@ -183,11 +184,11 @@ label[name="search"]:active{
 }
 
 .made-order-button:hover{
-    background-color: var(--green-bright, green);
+    background-color: var(--green-bright, #5FBB2D);
 }
 
 .made-order-button:active{
-    color: var(--semitransparent-white, white);
+    color: var(--semitransparent-white, rgba(255, 255, 255, 0.5));
 }
 
 .high-footer a{
@@ -213,8 +214,8 @@ label[name="search"]:active{
 a.bookmarks:active,
 a.cart:active
 {
-    background-color: var(--header-dark-grey, darkgrey);
-    color: var(--semitransparent-white, white);
+    background-color: var(--header-dark-grey, #161D29);
+    color: var(--semitransparent-white, rgba(255, 255, 255, 0.5));
 }
 
 .cart{
@@ -336,7 +337,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
-    color:var(--basic-red, red);
+    color:var(--basic-red, #EE3643);
     width: 221px;
     margin-left: 30px;
     margin-top:43px;
@@ -347,7 +348,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .shop-tel{
-    color:var(--basic-red, red);
+    color:var(--basic-red, #EE3643);
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
@@ -378,7 +379,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .shop-info .shop-address{
     font-size: 14px;
     line-height: 24px;
-    color: var(--nav-background-grey);
+    color: var(--nav-background-grey, #32425C);
     margin: 0px;
     text-align: center;
 }
@@ -478,13 +479,13 @@ a.logout:active path{
     font-size: 21px;
     line-height: 21px; 
     color:var(--black, black);
-    background-color: var(--white);
+    background-color: var(--white, white);
 }
 
 .login-features a{
     font-size: 16px;
     line-height: 18px;
-    color: var(--nav-background-grey,grey);
+    color: var(--nav-background-grey,#32425C);
     background-color: transparent;
     position: relative;
     padding-right: 34px;
@@ -504,11 +505,11 @@ a.logout:active path{
     top: 50%;
     transform: translateY(-50%);
     right:14px;
-    background-color:var(--nav-background-grey,grey);
+    background-color:var(--nav-background-grey,#32425C);
 }
 
 .account-managment a:hover{
-    color: var(--basic-red, red);
+    color: var(--basic-red, #EE3643);
 }
 
 .account-managment a.login-name:hover,
@@ -519,7 +520,7 @@ a.logout:active path{
 .account-managment a:active,
 .account-managment a.login-name:active
 {
-    color: var(--basic-greylight, grey);
+    color: var(--basic-greylight, #C5C5C5);
 }
 
 .registration{
@@ -569,10 +570,6 @@ a.logout:active path{
 }
 
 /* Navigation */
-/* .navigation{
-    background-color: var(--nav-background-grey);
-    color: var(--white,white);
-} */
 
 .navigation a{
     color: var(--white);
@@ -584,17 +581,17 @@ a.logout:active path{
 }
 
 .navigation a:hover{
-    background-color: var(--footer-grey);
+    background-color: var(--footer-grey, #293449);
 }
 
 .navigation a:active{
-    color: var(--semitransparent-white);
+    color: var(--semitransparent-white, rgba(255, 255, 255, 0.5));
     background-color: var(--nav-active);
 }
 
 .navigation ul{
     background-color: var(--nav-background-grey);
-    box-shadow: inset 0px -5px 0px var(--footer-grey);
+    box-shadow: inset 0px -5px 0px var(--footer-grey, #293449);
     list-style: none;
     padding: 0px;
     margin:0px;
@@ -618,11 +615,6 @@ a.logout:active path{
 .navigation li:last-child{
     padding-right: 20px;
 }
-
-
-/* .navigation{
-    box-shadow: inset 0px -5px 0px var(--footer-grey);
-} */
 
 /* About company */
 
@@ -651,11 +643,11 @@ a.logout:active path{
 .index-columns a:not(.map){
     text-transform: uppercase;
     color: var(--white, white);
-    background-color: var(--basic-red, red);
+    background-color: var(--basic-red, #EE3643);
 }
 
 .index-columns a:not(.map):active{
-    background-color: var(--dark-red, red);
+    background-color: var(--dark-red, #BA2732);
 }
 
 .about-us{
@@ -768,7 +760,7 @@ a.logout:active path{
     left: 0;
     margin: auto;
     border-top: 7px solid var(--basic-red, #EE3643);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--shadow-transparent,rgba(0, 0, 0, 0.15));
 }
 
 @keyframes bounce{
@@ -907,7 +899,7 @@ a.main-button:hover{
 }
 
 .continue-shopping:active{
-    color: var(--basic-greylight, grey);
+    color: var(--basic-greylight, #C5C5C5);
     outline: none;
 }
 
@@ -1131,7 +1123,7 @@ a.main-button:hover{
 }
 
 .footer-part-two{
-    background-color: var(--footer-grey, grey);
+    background-color: var(--footer-grey, #293449);
     font-size: 16px;
     line-height: 18px;
     color: var(--white, white);
@@ -1176,7 +1168,7 @@ a.main-button:hover{
 }
 
 .additional-navigation-low a{
-    color: var(--yellow-light, yellow);
+    color: var(--yellow-light, #FFD180);
 }
 
 .additional-navigation a:hover{
@@ -1243,7 +1235,7 @@ a.main-button:hover{
 }
 
 .materials{
-    background-color: var(--yellow-bright, yellow);
+    background-color: var(--yellow-bright, #FFBF47);
     grid-area: materials;
     position: relative;
     
@@ -1298,7 +1290,7 @@ a.main-button:hover{
 }
 
 .discount{
-    background-color: var(--green-light, green);
+    background-color: var(--green-light, #8ED78F);
     grid-area: discount;
     position: relative;
 }
@@ -1316,7 +1308,7 @@ a.main-button:hover{
 }
 
 .free-delivery{
-    background-color: var(--yellow-very-bright, yellow);
+    background-color: var(--yellow-very-bright, #FFC047);
     grid-area: free-delivery;
     position: relative;
 }
@@ -1334,7 +1326,7 @@ a.main-button:hover{
 }
 
 .open-catalog-button{
-    background-color: var(--basic-red, red);
+    background-color: var(--basic-red, #EE3643);
     width: 192px;
     color: var(--white, white);
     position: absolute;
@@ -1487,7 +1479,7 @@ a.main-button:hover{
 }
 
 .index-headings a{
-    background-color: var(--basic-red, red);
+    background-color: var(--basic-red, #EE3643);
     width: 192px;
     font-size: 14px;
     line-height: 18px;
@@ -1524,12 +1516,12 @@ a.main-button:hover{
 }
 
 .popular-producers img:hover{
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--shadow-transparent,rgba(0, 0, 0, 0.15));
 }
 
 .popular-producers img:active{
     opacity: 0.5;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--shadow-transparent,rgba(0, 0, 0, 0.15));
 }
 
 /* Services */
@@ -1710,7 +1702,7 @@ a.main-button:hover{
 /* Developers info */
 
 .developers-info a{
-    color: var(--yellow-light, yellow);
+    color: var(--yellow-light, #FFD180);
 }
 
 .developers-info a:hover
@@ -1720,7 +1712,7 @@ a.main-button:hover{
 
 .developers-info a:active
 {
-    color:var(--basic-red);
+    color:var(--basic-red, #EE3643);
 }
 
 .developers-info p{
@@ -1773,7 +1765,7 @@ a.main-button:hover{
 .social-media a:hover, 
 .social-media a:active
 {
-    background-color: var(--basic-red, red);
+    background-color: var(--basic-red, #EE3643);
 }
 
 
@@ -2317,8 +2309,8 @@ p.price-tag::after{
 }
 
 .perforators-items a{
-    background-color: var(--basic-green, green) ;
-    box-shadow: inset 0px -3px 0px var(--shadow-green, green);
+    background-color: var(--basic-green, #63A63E) ;
+    box-shadow: inset 0px -3px 0px var(--shadow-green, #367315);
     border-radius: 2px;
     color: var(--white, white);
     font-family: 'Cuprum', 'Arial', sans-serif;
@@ -2331,11 +2323,11 @@ p.price-tag::after{
 
 .perforators-items a:hover,
 .perforators-items a:focus{
-    background-color: var(--green-bright, green);
+    background-color: var(--green-bright, #5FBB2D);
 }
 
 .perforators-items a:active{
-    background-color: var(--active-green, green);
+    background-color: var(--active-green, #518534);
 }
 
 .perforators-items button{
@@ -2343,7 +2335,7 @@ p.price-tag::after{
     font-size: 14px;
     line-height: 18px;
     color: var(--nav-background-grey, black);
-    border: 3px solid var(--basic-green, green);
+    border: 3px solid var(--basic-green, #63A63E);
     border-radius: 2px;
     background-color: var(--white);
 }
@@ -2363,7 +2355,7 @@ p.price-tag::after{
 }
 
 .perforators-items article:hover{
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--shadow-transparent,rgba(0, 0, 0, 0.15));
 }
 
 .perforator-item:hover .good-wrapper{
@@ -2483,18 +2475,18 @@ p.price-tag::after{
 
 .pages a:hover,
 .pages a:focus{
-    border-color: var(--basic-greylight, grey);
+    border-color: var(--basic-greylight, #C5C5C5);
     background-color: var(--white);
     outline: none;
 }
 
 .pages a:active{
-    border-color: var(--basic-red, red);
+    border-color: var(--basic-red, #EE3643);
 }
 
 .pages a:not([href]){
-    background-color: var(--basic-red, red);
-    border-color: var(--basic-red, red);
+    background-color: var(--basic-red, #EE3643);
+    border-color: var(--basic-red, #EE3643);
 }
 
 
