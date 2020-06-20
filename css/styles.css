@@ -964,8 +964,8 @@ a.main-button:hover{
     position: absolute;
 }
 
-.modal-map iframe {
-    border: none;
+.map-popup iframe {
+    border: 0;
 }
 
 .feedback label{
