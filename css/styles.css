@@ -590,7 +590,7 @@ a.logout:active path{
 }
 
 .navigation ul{
-    background-color: var(--nav-background-grey);
+    background-color: var(--nav-background-grey, #32425C);
     box-shadow: inset 0px -5px 0px var(--footer-grey, #293449);
     list-style: none;
     padding: 0px;
@@ -1057,7 +1057,7 @@ a.main-button:hover{
 /* Footer */
 
 .footer-part-one{
-    background-color: var(--nav-background-grey);
+    background-color: var(--nav-background-grey, #32425C);
     font-size: 18px;
     line-height: 24px;
     color: var(--white, white);
@@ -1461,7 +1461,7 @@ a.main-button:hover{
     background-color: var(--heading-beige, beige);
     width: 940px;
     text-transform: uppercase;
-    color: var(--nav-background-grey, grey);
+    color: var(--nav-background-grey, #32425C);
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -1630,6 +1630,7 @@ a.main-button:hover{
 
 .services .container{
     position: relative;
+    z-index: 0; /*чтобы fixed modal не проваливась под типы сервисов*/
 }
 
 .list-shadow{
@@ -1800,7 +1801,7 @@ a.main-button:hover{
 
 .perforators-catalog h2{
     background-color: var(--basic-background, #F1F5F7);
-    color: var(--nav-background-grey, black);
+    color: var(--nav-background-grey, #32425C);
     text-transform: uppercase;
     font-size: 30px;
     line-height: 30px;
@@ -2272,7 +2273,7 @@ fieldset.catalog-filter-supply p{
 }
 
 .perforators-items del{
-    color:var(--not-active-price, grey);
+    color:var(--not-active-price, #A9A9A9);
     margin-bottom: 13px;
 }
 
@@ -2334,24 +2335,24 @@ p.price-tag::after{
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 18px;
-    color: var(--nav-background-grey, black);
+    color: var(--nav-background-grey, #32425C);
     border: 3px solid var(--basic-green, #63A63E);
     border-radius: 2px;
     background-color: var(--white);
 }
 
 .perforators-items button:hover {
-    border: 3px solid var(--nav-background-grey, grey);
+    border: 3px solid var(--nav-background-grey, #32425C);
 }
 
 .perforators-items button:active{
-    border: 3px solid var(--nav-background-grey, grey);
+    border: 3px solid var(--nav-background-grey, #32425C);
     opacity: 50%;
 }
 
 .perforators-items button:focus{
     outline: none;
-    border: 3px solid var(--nav-background-grey, grey);
+    border: 3px solid var(--nav-background-grey, #32425C);
 }
 
 .perforators-items article:hover{
@@ -2454,7 +2455,7 @@ p.price-tag::after{
 }
 
 .pages a{
-    border: 1px solid var(--very-very-slight-grey, grey);
+    border: 1px solid var(--very-very-slight-grey, #E5E5E5);
     border-radius: 2px;
     background-color: var(--white, white);
     color: var(--black);
