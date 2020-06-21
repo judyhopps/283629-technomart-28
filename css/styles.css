@@ -55,6 +55,7 @@
     --good-info-grey: #F1F1F1;
     --hover-red-button:#CA2C37;
     --shadow-transparent:rgba(0, 0, 0, 0.15);
+    --wall-color: #AF9F8B;
 }
 
 @font-face{
@@ -1090,6 +1091,8 @@ a.main-button:hover{
 .footer-phone{
     text-decoration: none;
     color: inherit;
+    margin: 0;
+    padding-left: 3px;
 }
 
 .address-and-phone{
@@ -1152,17 +1155,23 @@ a.main-button:hover{
 .social-media{
     display: flex;
     width: 135px;
-    align-items: flex-end;
-    margin-bottom: 24px;
-    padding-left: 38px;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 40px;
 }
 
 .social-media ul{
     margin:0px;
     padding: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
+}
+
+.social-media li{
+    margin-right: 4px;
+    margin-bottom: 4px;
 }
 
 
@@ -1352,6 +1361,7 @@ a.main-button:hover{
 .slider{
     grid-area: slider;
     position: relative;
+    background-color: var(--wall-color, #AF9F8B);
 }
 
 .slider-controls button{
@@ -1751,10 +1761,10 @@ a.main-button:hover{
     list-style: none;
 }
 
-.social-media  a{
+.social-media a{
     display: block;
-    width: 42px;
-    height: 42px;
+    width: 41px;
+    height: 41px;
     background-color: var(--social-dark-grey, grey);
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -2406,7 +2416,7 @@ p.price-tag::after{
     width: 135px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 34px;
 }
 
@@ -2505,6 +2515,7 @@ p.price-tag::after{
 .pages a:not([href]){
     background-color: var(--basic-red, #EE3643);
     border-color: var(--basic-red, #EE3643);
+    color: var(--white, white);
 }
 
 
