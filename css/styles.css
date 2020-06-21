@@ -1087,6 +1087,11 @@ a.main-button:hover{
     padding-left: 3px;
 }
 
+.footer-phone{
+    text-decoration: none;
+    color: inherit;
+}
+
 .address-and-phone{
     margin-bottom: 54px;
 }
