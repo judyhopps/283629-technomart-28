@@ -2127,6 +2127,7 @@ fieldset.catalog-filter-producers{
 .checkbox-label{
     position: relative;
     padding-left: 32px;
+    cursor: pointer;
 }
 
 .custom-check-box{
@@ -2183,6 +2184,7 @@ fieldset.catalog-filter-supply p{
 .radio-label{
     position: relative;
     padding-left: 35px;
+    cursor: pointer;
 }
 
 .custom-radio-button{
