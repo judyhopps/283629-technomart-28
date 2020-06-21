@@ -2504,3 +2504,10 @@ p.price-tag::after{
   align-content: start;
 }
  
+.popular-producers a{
+    display: block;
+}
+
+.popular-producers img{
+    display: block;
+}
