@@ -2420,14 +2420,29 @@ p.price-tag::after{
     padding-bottom: 10px;
     margin-bottom: 10px;
     margin-top: 34px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    position: relative;
+}
+
+.perforator-item a::before{
+    content: "";
+    background-image: url("../img/icon-cart.svg");
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:30px;
+    opacity: 0.3;
 }
 
 .perforator-item button{
     text-transform: uppercase;
     display: block;
     width: 135px;
-    padding-bottom: 9px;
-    padding-top: 11px;
+    padding-bottom: 6px;
+    padding-top: 8px;
 }
 
 .perforator-item{
