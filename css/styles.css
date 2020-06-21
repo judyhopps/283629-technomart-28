@@ -383,6 +383,7 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--nav-background-grey, #32425C);
     margin: 0px;
     text-align: center;
+    width: 270px;
 }
 
 .header-shop-contacts{
@@ -1154,7 +1155,7 @@ a.main-button:hover{
 
 .social-media{
     display: flex;
-    width: 135px;
+    max-width: 225px;
     align-items: center;
     margin-top: 10px;
     padding-left: 40px;
@@ -2143,6 +2144,7 @@ fieldset.catalog-filter-producers{
     position: relative;
     padding-left: 32px;
     cursor: pointer;
+    display: block;
 }
 
 .custom-check-box{
