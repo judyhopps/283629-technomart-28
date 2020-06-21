@@ -107,7 +107,7 @@
 
 body{
     min-width: 940px;
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     box-sizing: border-box ;
 }
 
@@ -150,7 +150,7 @@ a {
 input[name="search"]{
     background-color: var(--footer-grey, #293449);
     border: none;
-    font-family: 'Cuprum' Arial, sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
 label[name="search"]:active{
@@ -1988,7 +1988,7 @@ a.main-button:hover{
 /* Filter */
 
 .catalog-filter legend{
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
@@ -2088,7 +2088,7 @@ fieldset.catalog-filter-producers{
 }
 
 .price-control input{
-    font-family: PT Sans;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 17px;
     line-height: 18px;
     border-radius: 5px;
@@ -2220,7 +2220,7 @@ fieldset.catalog-filter-supply p{
 .catalog-filter label{
     font-size: 15px;
     line-height: 19px;
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .catalog-filter button{
@@ -2261,7 +2261,7 @@ fieldset.catalog-filter-supply p{
 .perforators-items article{
     border: 1px solid var(--verylight-grey);
     min-height: 316px;
-    font-family:'PT Sans', Arial,  sans-serif;
+    font-family:'PT Sans', 'Arial',  sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
