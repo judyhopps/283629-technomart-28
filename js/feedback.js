@@ -49,7 +49,6 @@ feedbackForm.addEventListener(
     function(e){
         if(!userNameInput.value || !userMailInput.value){
             e.preventDefault();
-            console.log("Не введены обязательные поля");
             feedbackWindow.classList.remove("modal-error");
             feedbackWindow.offsetWidth = feedbackWindow.offsetWidth;
             feedbackWindow.classList.add('modal-error');
