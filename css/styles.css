@@ -2117,6 +2117,7 @@ fieldset.catalog-filter-producers{
     -moz-appearance:none;
     appearance: none;
     position: absolute; /* remove whatespace after hidden input*/
+    outline: none;/*remove dot in mozilla*/
 }
 
 .checkbox-label{
@@ -2172,6 +2173,7 @@ fieldset.catalog-filter-supply p{
     -moz-appearance:none;
     appearance: none;
     position: absolute;
+    outline: none;/*remove dot in mozilla*/
 }
 
 .radio-label{
