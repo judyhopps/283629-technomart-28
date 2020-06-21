@@ -763,6 +763,10 @@ a.logout:active path{
     box-shadow: 0px 4px 20px var(--shadow-transparent,rgba(0, 0, 0, 0.15));
 }
 
+.modal button{
+    cursor: pointer;
+}
+
 @keyframes bounce{
     0% {transform: translateY(360px);}
     100% {transform: translateY(0);}
@@ -1555,6 +1559,7 @@ a.main-button:hover{
     text-align: start;
     border-top: 1px solid var(--button-shadow-grey, #405069);
     border-bottom: 1px solid var(--footer-grey, #293449);
+    cursor: pointer;
 }
 
 .service-types button:hover,
@@ -2223,6 +2228,7 @@ fieldset.catalog-filter-supply p{
     border: 1px solid var(--black, black);
     width: 220px;
     height: 38px;
+    cursor: pointer;
 }
 
 /* Catalog items */
@@ -2342,6 +2348,7 @@ p.price-tag::after{
     border: 3px solid var(--basic-green, #63A63E);
     border-radius: 2px;
     background-color: var(--white);
+    cursor: pointer;
 }
 
 .perforators-items button:hover {
