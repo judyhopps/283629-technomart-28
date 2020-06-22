@@ -384,6 +384,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin: 0px;
     text-align: center;
     width: 270px;
+    word-break: break-word;
 }
 
 .header-shop-contacts{
@@ -2145,6 +2146,7 @@ fieldset.catalog-filter-producers{
     padding-left: 32px;
     cursor: pointer;
     display: block;
+    word-break: break-word;
 }
 
 .custom-check-box{
@@ -2202,6 +2204,8 @@ fieldset.catalog-filter-supply p{
     position: relative;
     padding-left: 35px;
     cursor: pointer;
+    display: block;
+    word-break: break-word;
 }
 
 .custom-radio-button{
